@@ -1,0 +1,3811 @@
+[
+  {
+    "name": "Arbusto Espinhento",
+    "type": "Lacaio",
+    "tier": 1,
+    "description": "Um aglomerado de vinhas sanguinárias.",
+    "motivationsAndTactics": "combinar, drenar, enrolar",
+    "difficulty": 11,
+    "threshold": "nenhum",
+    "hp": 1,
+    "stress": 1,
+    "attack": {
+      "value": -1,
+      "type": "Espinhos: corpo a corpo | 2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Lacaio (4) (passiva)",
+        "description": "o arbusto-espinhento é derrotado quando sofre qualquer dano. Para cada 4 pontos de dano causados por um personagem ao arbusto, um lacaio adicional no alcance, e que seria atingido pelo ataque, é derrotado."
+      },
+      {
+        "name": "Ataque em Grupo (ação)",
+        "description": "gaste 1 Ponto de Medo para escolher um alvo e pôr em foco todos os arbustos espinhentos Próximos dele. Esses lacaios ficam em alcance corpo a corpo do alvo e fazem um teste de ataque compartilhado. Se acertarem, cada um causa 2 pontos de dano físico. Os danos são somados."
+      },
+      {
+        "name": "Drenar e Multiplicar (reação)",
+        "description": "quando há três ou mais lacaios arbustos espinhentos Próximos e um ataque deste arbusto espinhento faz um alvo marcar Pontos de Vida, você pode combinar os lacaios em um enxame de arbustos. Os Pontos de Vida da horda equivalem ao número de lacaios combinados."
+      }
+    ]
+  },
+  {
+    "name": "Bando de Ratos",
+    "type": "Horda",
+    "tier": 1,
+    "description": "Um amontoado de roedores se movendo como uma onda faminta.",
+    "motivationsAndTactics": "consumir, enxamear, obscurecer",
+    "difficulty": 10,
+    "threshold": "6/10",
+    "hp": 6,
+    "stress": 2,
+    "attack": {
+      "value": -3,
+      "type": "Garras: corpo a corpo | 1d8+2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Horda (1d4+1) (passiva)",
+        "description": "quando o bando de ratos tiver marcado metade de seus Pontos de Vida ou mais, seu ataque padrão causa 1d4+1 pontos de dano físico, em vez do valor original."
+      },
+      {
+        "name": "Por Toda Parte (passiva)",
+        "description": "todos os alvos em alcance cac fazem testes de ataque contra alvos que não sejam o bando com desvantagem."
+      }
+    ]
+  },
+  {
+    "name": "Cobra-de-Vidro",
+    "type": "Comum",
+    "tier": 1,
+    "description": "Uma serpente translúcida com uma cabeça imensa, que deixa um rastro de vidro por onde passa.",
+    "motivationsAndTactics": "assustar, comer, escalar, manter distância",
+    "difficulty": 14,
+    "threshold": "6/10",
+    "hp": 5,
+    "stress": 3,
+    "attack": {
+      "value": 2,
+      "type": "Presas de vidro: muito próximo | 1d8+2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Cacos Antiarmadura (passiva)",
+        "description": "após acertar um ataque corpo a corpo contra a cobra-de-vidro, o atacante deve marcar 1 Ponto de Armadura. Se não for possível marcar 1 Ponto de Armadura, o atacante deve marcar 1 PV."
+      },
+      {
+        "name": "Cuspideira (ação)",
+        "description": "gaste 1 Ponto de Medo para transformar 1d6 no Dado de Cuspida. Quando a cobra-de-vidro estiver em foco, role esse dado. Se rolar 5 ou mais, todos os alvos distantes na frente da cobra-de-vidro devem passar em um teste de reação de Agilidade, ou sofrem 1d4 pontos de dano físico. Além disso, a cobra-de-vidro pode ser posta em foco uma segunda vez durante este turno do mestre."
+      },
+      {
+        "name": "Serpente Giratória (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer um ataque contra todos os alvos muito próximos. Alvos atingidos por este ataque sofrem 1d6+1 pontos de dano físico."
+      }
+    ]
+  },
+  {
+    "name": "Enxame de Arbustos",
+    "type": "Horda",
+    "tier": 1,
+    "quantity": 3,
+    "description": "Um aglomerado de vinhas sanguinárias, cada uma tão grande quanto uma cabaça.",
+    "motivationsAndTactics": "digerir, enrolar, imobilizar",
+    "difficulty": 12,
+    "threshold": "6/11",
+    "hp": 6,
+    "stress": 3,
+    "attack": {
+      "value": 0,
+      "type": "Espinhos: corpo a corpo | 1d6+3 fís"
+    },
+    "abilities": [
+      {
+        "name": "Horda (1d4+2) (passiva)",
+        "description": "quando os arbustos tiverem marcado metade de seus Pontos de Vida ou mais, seu ataque padrão causa 1d4+2 pontos de dano físico, em vez do valor original."
+      },
+      {
+        "name": "Esmagar (ação)",
+        "description": "marque 1 Ponto de Fadiga para causar 2d6+8 pontos de dano físico direto a um alvo com 3 Marcadores de Arbusto ou mais."
+      },
+      {
+        "name": "Atravancar (reação)",
+        "description": "quando o arbusto acertar um ataque, o alvo recebe 1 Marcador de Arbusto. Um alvo com 1 marcador fica Imobilizado. Um alvo com 3 marcadores ou mais fica Vulnerável. Todos os marcadores de Arbusto podem ser removidos com sucesso em um teste de Acuidade (12 + o número de marcadores no alvo) ou causando dano maior ou superior ao enxame. Se um alvo remover Marcadores de Arbusto com um teste, uma quantidade de lacaios arbustos-espinhentos igual ao número de marcadores removidos surge em um ponto em alcance corpo a corpo."
+      }
+    ]
+  },
+  {
+    "name": "Comerciante",
+    "type": "Manipulador",
+    "tier": 1,
+    "description": "Um mercador bem trajado com olhar aguçado para obter lucro.",
+    "motivationsAndTactics": "buscar lucro, comprar barato e vender caro, criar demanda, inflar preços",
+    "difficulty": 12,
+    "threshold": "4/8",
+    "hp": 3,
+    "stress": 3,
+    "attack": {
+      "value": -4,
+      "type": "Porrete: corpo a corpo | 1d4+1 fís"
+    },
+    "abilities": [
+      {
+        "name": "Enrolação (passiva)",
+        "description": "quando um personagem rolar 14 ou menos em testes de Presença contra o comerciante, ele deve marcar 1 Ponto de Fadiga."
+      },
+      {
+        "name": "Tratamento Preferencial (passiva)",
+        "description": "um personagem que passar num teste de Presença contra o comerciante recebe um desconto em suas compras. Enquanto quem falhou deve pagar mais caro e sofre desvantagem em futuros testes de Presença contra o comerciante."
+      }
+    ]
+  },
+  {
+    "name": "Construto",
+    "type": "Solo",
+    "tier": 1,
+    "description": "Quase um humanoide de pedra e aço, feito e animado por magia.",
+    "motivationsAndTactics": "atropelar grupos, destruir ambientes, esmagar alvo, servir criador",
+    "difficulty": 13,
+    "threshold": "7/15",
+    "hp": 9,
+    "stress": 4,
+    "attack": {
+      "value": 4,
+      "type": "Punhos poderosos: corpo a corpo | 1d20 fís"
+    },
+    "abilities": [
+      {
+        "name": "Estrutura frágil (passiva)",
+        "description": "quando o construto marca Pontos de Vida por dano físico, ele marca 1 PV adicional."
+      },
+      {
+        "name": "Inclemente (2) (passiva)",
+        "description": "o construto pode ser posto em foco até 2 vezes por turno do mestre. Gaste Pontos de Medo normalmente para colocá-lo em foco."
+      },
+      {
+        "name": "Atropelar (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer um ataque contra todos os alvos no caminho do construto enquanto ele se move. Alvos atingidos sofrem 1d8 pontos de dano físico."
+      },
+      {
+        "name": "Sobrecarga (reação)",
+        "description": "antes de rolar dano do ataque do construto, você pode marcar 1 Ponto de Fadiga para receber um bônus de +10 na rolagem de dano. Então ponha o construto em foco novamente."
+      },
+      {
+        "name": "Terremoto da Morte (reação)",
+        "description": "quando o construto marcar seu último Ponto de Vida, a magia que o sustenta rompe em uma explosão de força. Faça um ataque com vantagem contra todos os alvos muito próximos. Alvos atingidos sofrem 1d12+2 pontos de dano mágico."
+      }
+    ]
+  },
+  {
+    "name": "Defensor Enraizado",
+    "type": "Brutamonte",
+    "tier": 1,
+    "description": "Uma pessoa-vegetal robusta com vinhas capazes de agarrar.",
+    "motivationsAndTactics": "agarrar, emboscar, proteger, socar",
+    "difficulty": 10,
+    "threshold": "8/14",
+    "hp": 7,
+    "stress": 3,
+    "attack": {
+      "value": 2,
+      "type": "Vinhas: Próximo | 1d8+3 fís"
+    },
+    "abilities": [
+      {
+        "name": "Arrebatar (ação)",
+        "description": "faça um ataque contra um alvo Próximo. Se o atingir, gaste 1 Ponto de Medo para puxá-lo para um ponto em alcance corpo a corpo, causando 1d6+2 pontos de dano físico e deixando-o Imobilizado até que o defensor sofra dano grave."
+      },
+      {
+        "name": "Golpear o chão (ação)",
+        "description": "golpeie o chão, empurrando todos os alvos muito próximos para um ponto em alcance distante. Cada alvo empurrado deve marcar 1 Ponto de Fadiga."
+      }
+    ]
+  },
+  {
+    "name": "Demônio Menor",
+    "type": "Solo",
+    "tier": 1,
+    "description": "Uma criatura avermelhada vinda dos Círculos Inferiores, consumida por sua ira contra todos os mortais.",
+    "motivationsAndTactics": "encurralar, flagelar, ser errático, sorver dor",
+    "difficulty": 14,
+    "threshold": "8/15",
+    "hp": 8,
+    "stress": 4,
+    "attack": {
+      "value": 3,
+      "type": "Garras: corpo a corpo | 1d8+6 fís"
+    },
+    "abilities": [
+      {
+        "name": "Inclemente (2) (passiva)",
+        "description": "o demônio pode ser posto em foco até 2 vezes por turno do mestre. Gaste Pontos de Medo normalmente para colocá-lo em foco."
+      },
+      {
+        "name": "Tudo Deve Ruir (passiva)",
+        "description": "se um personagem estiver próximo do demônio e falhar com Medo, ele perde 1 Ponto de Esperança."
+      },
+      {
+        "name": "Fogo Infernal (ação)",
+        "description": "gaste 1 Ponto de Medo para fazer chover o fogo do inferno em alcance Próximo. Alvos na área devem fazer um teste de reação de Agilidade, quem falhar sofre 1d20+3 pontos de dano mágico. Quem passar sofre metade do dano."
+      },
+      {
+        "name": "Ceifador (reação)",
+        "description": "antes da rolagem de dano do demônio, você pode marcar 1 Ponto de Fadiga para aumentar o dano causado em uma quantidade igual aos PV marcados do demônio."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando o demônio acertar um ataque contra um personagem, receba 1 Ponto de Medo."
+      }
+    ]
+  },
+  {
+    "name": "Dríade Jovem",
+    "type": "Líder",
+    "tier": 1,
+    "description": "Uma pessoa-árvore autoritária que lidera as defesas da floresta.",
+    "motivationsAndTactics": "comandar, eliminar intrusos, nutrir",
+    "difficulty": 11,
+    "threshold": "6/11",
+    "hp": 6,
+    "stress": 2,
+    "attack": {
+      "value": 0,
+      "type": "Foice: corpo a corpo | 1d8+5 fís"
+    },
+    "abilities": [
+      {
+        "name": "Prisão de Espinhos (ação)",
+        "description": "gaste 1 Ponto de Medo para formar uma jaula ao redor de um alvo muito próximo. O alvo fica Imobilizado até ter sucesso em um teste de Força. Se uma criatura fizer um teste contra a jaula, ela deve marcar 1 PF."
+      },
+      {
+        "name": "Voz da Floresta (ação)",
+        "description": "marque 1 Ponto de Fadiga para pôr em foco 1d4 aliados que possam atacar um mesmo alvo sem se mover. Se passar, ataques destes aliados causam metade do dano."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando a dríade acertar um ataque contra um personagem, receba 1 Ponto de Medo."
+      }
+    ]
+  },
+  {
+    "name": "Elemental Menor do Caos",
+    "type": "Solo",
+    "tier": 1,
+    "description": "Uma massa reluzente de magia incontrolável.",
+    "motivationsAndTactics": "confundir, desestabilizar, metamorfosear",
+    "difficulty": 14,
+    "threshold": "7/14",
+    "hp": 7,
+    "stress": 3,
+    "attack": {
+      "value": 3,
+      "type": "Golpe distorcido: Próximo | 1d12+6 mág"
+    },
+    "abilities": [
+      {
+        "name": "Forma Arcana (passiva)",
+        "description": "o elemental é resistente a dano mágico."
+      },
+      {
+        "name": "Fluxo Pestilento (ação)",
+        "description": "marque 1 Ponto de Vida para forçar todos os alvos Próximos a marcar 1 Ponto de Fadiga e ficarem Vulneráveis até o próximo descanso ou até que recuperem 1 PV."
+      },
+      {
+        "name": "Refazer Realidade (ação)",
+        "description": "gaste 1 Ponto de Medo para transformar a área próxima em um bioma diferente. Todos os alvos na área sofrem 2d6+3 pontos de dano mágico direto."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando o elemental acerta um ataque contra um personagem, receba 1 Ponto de Medo."
+      },
+      {
+        "name": "Reflexo Mágico (reação)",
+        "description": "quando o elemental sofre dano de um ataque Próximo, causa metade do dano sofrido ao atacante."
+      }
+    ]
+  },
+  {
+    "name": "Elemental Menor do Fogo",
+    "type": "Solo",
+    "tier": 1,
+    "description": "Uma chama viva do tamanho de uma fogueira grande.",
+    "motivationsAndTactics": "aumentar de tamanho, cercar inimigos, incendiar, intimidar",
+    "difficulty": 13,
+    "threshold": "7/15",
+    "hp": 9,
+    "stress": 3,
+    "attack": {
+      "value": 3,
+      "type": "Golpe elemental: distante | 1d10+4 mág"
+    },
+    "abilities": [
+      {
+        "name": "Inclemente (2) (passiva)",
+        "description": "o elemental pode ser posto em foco até 2 vezes por turno do mestre. Gaste Pontos de Medo normalmente para colocá-lo em foco."
+      },
+      {
+        "name": "Explosão (ação)",
+        "description": "gaste 1 Ponto de Medo para explodir em chamas. Faça um ataque contra todos os alvos Próximos. Alvos atingidos pelo elemental sofrem 1d8 pontos de dano mágico e são empurrados para um ponto em alcance distante."
+      },
+      {
+        "name": "Queimada (ação)",
+        "description": "marque 1 Ponto de Fadiga para escolher um ponto em alcance distante. O chão muito próximo desse ponto é imediatamente tomado por chamas. Todas as criaturas na área devem fazer um teste de reação de Agilidade. Alvos que falhem no teste sofrem 2d8 pontos de dano mágico pelas chamas. Alvos que passem sofrem metade do dano."
+      },
+      {
+        "name": "Consumir Chamas (reação)",
+        "description": "três vezes por cena, quando o elemental passar por objetos que sejam muito inflamáveis, consuma-os para recuperar 1 PV ou 1 PF."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando o elemental acerta um ataque contra um personagem, receba 1 Ponto de Medo."
+      }
+    ]
+  },
+  {
+    "name": "Escorpião Gigante",
+    "type": "Brutamonte",
+    "tier": 1,
+    "description": "Um aracnídeo grande como um homem com garras terríveis e um ferrão na cauda.",
+    "motivationsAndTactics": "alimentar-se, agarrar, emboscar, envenenar",
+    "difficulty": 13,
+    "threshold": "7/13",
+    "hp": 6,
+    "stress": 3,
+    "attack": {
+      "value": 1,
+      "type": "Pinças: corpo a corpo | 1d12+2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Ataque Duplo (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer um ataque padrão contra dois alvos corpo a corpo."
+      },
+      {
+        "name": "Ferrão Peçonhento (ação)",
+        "description": "faça um ataque contra um alvo muito próximo. Em caso de sucesso, gaste 1 Ponto de Medo para que o alvo sofra 1d4+4 pontos de dano físico e fique Envenenado até seu próximo descanso ou até que passe em um teste de Conhecimento (16). Enquanto estiver Envenenado, o alvo deve rolar 1d6 antes de todos seus testes. Se rolar 4 ou menos, o alvo deve marcar 1 Ponto de Fadiga."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando o escorpião acertar um ataque contra um personagem, receba 1 Ponto de Medo."
+      }
+    ]
+  },
+  {
+    "name": "Esqueleto Arqueiro",
+    "type": "Atirador",
+    "tier": 1,
+    "description": "Um esqueleto frágil com um arco curto e flechas.",
+    "motivationsAndTactics": "fingir de morto, perfurar alvos distraídos, roubar pele",
+    "difficulty": 9,
+    "threshold": "4/7",
+    "hp": 3,
+    "stress": 2,
+    "attack": {
+      "value": 2,
+      "type": "Arco curto: distante | 1d8+1 fís"
+    },
+    "abilities": [
+      {
+        "name": "Oportunista (passiva)",
+        "description": "quando dois ou mais adversários estiverem muito próximos de uma criatura, todo o dano causado pelo esqueleto arqueiro na criatura é dobrado."
+      },
+      {
+        "name": "Tiro Mortal (ação)",
+        "description": "faça um ataque contra um alvo distante que esteja Vulnerável. Se acertar, marque 1 Ponto de Fadiga e cause 3d4+8 pontos de dano físico."
+      }
+    ]
+  },
+  {
+    "name": "Ente Menor",
+    "type": "Lacaio",
+    "tier": 1,
+    "description": "Uma muda ambulante que se ergueu para defender sua floresta.",
+    "motivationsAndTactics": "esmagar, proteger, sobrecarregar",
+    "difficulty": 10,
+    "threshold": "nenhum",
+    "hp": 1,
+    "stress": 1,
+    "attack": {
+      "value": -2,
+      "type": "Galho-garra: corpo a corpo | 4 fís"
+    },
+    "abilities": [
+      {
+        "name": "Lacaio (5) (passiva)",
+        "description": "o ente menor é derrotado quando sofre qualquer dano. Para cada 5 pontos de dano causados por um personagem ao ente menor, um lacaio adicional no alcance, e que seria atingido pelo ataque, é derrotado."
+      },
+      {
+        "name": "Ataque em Grupo (ação)",
+        "description": "gaste 1 Ponto de Medo para escolher um alvo e pôr em foco todos os entes menores Próximos dele. Esses lacaios ficam corpo a corpo ao alvo e fazem um teste de ataque compartilhado. Se acertarem, cada um causa 4 pontos de dano físico. Os danos são somados."
+      }
+    ]
+  },
+  {
+    "name": "Esqueleto Arruinado",
+    "type": "Lacaio",
+    "tier": 1,
+    "description": "Uma pilha barulhenta de ossos.",
+    "motivationsAndTactics": "desmoronar, fingir de morto, sobrecarregar, roubar pele",
+    "difficulty": 8,
+    "threshold": "nenhum",
+    "hp": 1,
+    "stress": 1,
+    "attack": {
+      "value": -1,
+      "type": "Garras ósseas: corpo a corpo | 1 fís"
+    },
+    "abilities": [
+      {
+        "name": "Lacaio (4) (passiva)",
+        "description": "o esqueleto arruinado é derrotado quando sofre qualquer dano. Para cada 4 pontos de dano causados por um personagem ao esqueleto, um lacaio adicional no alcance, e que seria atingido pelo ataque, é derrotado."
+      },
+      {
+        "name": "Ataque em Grupo (ação)",
+        "description": "gaste 1 Ponto de Medo para escolher um alvo e pôr em foco todos os esqueletos arruinados Próximos dele. Esses lacaios ficam corpo a corpo ao alvo e fazem um teste de ataque compartilhado. Se acertarem, cada um causa 1 ponto de dano físico. Os danos são somados."
+      }
+    ]
+  },
+  {
+    "name": "Esqueleto Cavaleiro",
+    "type": "Brutamonte",
+    "tier": 1,
+    "description": "Um grande esqueleto blindado com uma espada imensa.",
+    "motivationsAndTactics": "destruir, matar os vivos, roubar pele",
+    "difficulty": 13,
+    "threshold": "7/13",
+    "hp": 5,
+    "stress": 2,
+    "attack": {
+      "value": 2,
+      "type": "Espada grande enferrujada: cac | 1d10+2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Aterrorizante (passiva)",
+        "description": "quando o cavaleiro acertar um ataque, todos os personagens Próximos perdem 1 Ponto de Esperança. Receba 1 Ponto de Medo."
+      },
+      {
+        "name": "Cortar Até o Osso (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer um ataque contra todos os alvos muito próximos. Alvos atingidos pelo cavaleiro sofrem 1d8+2 pontos de dano físico e devem marcar 1 Ponto de Fadiga."
+      },
+      {
+        "name": "Cova Dupla (reação)",
+        "description": "quando o cavaleiro é derrotado, faça um ataque contra um alvo muito próximo (priorizando a criatura que derrotou o cavaleiro). Em caso de sucesso, o alvo sofre 1d4+8 pontos de dano físico e perde 1d4 Pontos de Esperança."
+      }
+    ]
+  },
+  {
+    "name": "Esqueleto Guerreiro",
+    "type": "Comum",
+    "tier": 1,
+    "description": "Um esqueleto empoeirado, armado com uma lâmina enferrujada.",
+    "motivationsAndTactics": "agrupar, fingir de morto, roubar pele",
+    "difficulty": 10,
+    "threshold": "4/8",
+    "hp": 3,
+    "stress": 2,
+    "attack": {
+      "value": 0,
+      "type": "Espada: corpo a corpo | 1d6+2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Puro Osso (passiva)",
+        "description": "o guerreiro é resistente a dano físico."
+      },
+      {
+        "name": "Nunca Morre (reação)",
+        "description": "quando o esqueleto é derrotado, você pode colocá-lo em foco e rolar 1d6. Se rolar 6 e houver outros adversários na cena, o esqueleto se monta novamente e desmarca todos os PV."
+      }
+    ]
+  },
+  {
+    "name": "Guarda Armado",
+    "type": "Comum",
+    "tier": 1,
+    "description": "Um guarda de armadura portando uma espada e um escudo pintado com as cores do assentamento.",
+    "motivationsAndTactics": "chegar ao fim do dia, fechar portões, imobilizar, prender",
+    "difficulty": 12,
+    "threshold": "5/9",
+    "hp": 5,
+    "stress": 2,
+    "attack": {
+      "value": 1,
+      "type": "Espada longa: corpo a corpo | 1d6+1 fís"
+    },
+    "abilities": [
+      {
+        "name": "Parede de Escudos (passiva)",
+        "description": "uma criatura que tente se mover para muito próximo do guarda precisa passar em um teste de Agilidade. Se outros guardas armados estiverem em fila ao lado deste, e cada um estiver corpo a corpo ao próximo da fila, a Dificuldade aumenta em um número igual ao total de guardas armados em fila."
+      },
+      {
+        "name": "Deter (ação)",
+        "description": "faça um ataque contra um alvo muito próximo. Em caso de sucesso, marque 1 Ponto de Fadiga para Imobilizar o alvo até que se liberte com sucesso em um teste de ataque, um teste de Acuidade ou um teste de Força."
+      }
+    ]
+  },
+  {
+    "name": "Guarda Arqueiro",
+    "type": "Atirador",
+    "tier": 1,
+    "description": "Um guarda alto portando um arco longo e uma aljava com flechas nas cores do assentamento.",
+    "motivationsAndTactics": "chegar ao fim do dia, fechar portões, imobilizar, prender",
+    "difficulty": 10,
+    "threshold": "4/8",
+    "hp": 3,
+    "stress": 2,
+    "attack": {
+      "value": 1,
+      "type": "Arco longo: distante | 1d8+3 fís"
+    },
+    "abilities": [
+      {
+        "name": "Tiro Debilitante (ação)",
+        "description": "faça um ataque contra um alvo distante. Em caso de sucesso, marque 1 Ponto de Fadiga para causar 1d12+3 pontos de dano físico. Um alvo que marque Pontos de Vida por causa deste ataque sofre desvantagem em testes de Agilidade até que recupere ao menos 1 Ponto de Vida."
+      }
+    ]
+  },
+  {
+    "name": "Guarda Chefe",
+    "type": "Líder",
+    "tier": 1,
+    "description": "Um guarda experiente com uma maça, um apito e um vozeirão.",
+    "motivationsAndTactics": "buscar glória, fechar portões, imobilizar, prender",
+    "difficulty": 15,
+    "threshold": "7/13",
+    "hp": 7,
+    "stress": 3,
+    "attack": {
+      "value": 4,
+      "type": "Maça: corpo a corpo | 1d10+4 fís"
+    },
+    "abilities": [
+      {
+        "name": "Reunir a Guarda (ação)",
+        "description": "gaste 2 Pontos de Medo para pôr o guarda chefe em foco junto de até 2d4 aliados Distantes."
+      },
+      {
+        "name": "Ao Meu Sinal (reação)",
+        "description": "Contagem (5). Quando o guarda chefe é posto em foco pela primeira vez, ative a contagem regressiva e a diminua sempre que um personagem fizer um teste de ataque. Quando a contagem chegar a zero, todos os guardas arqueiros em alcance distante fazem um ataque padrão com vantagem contra os alvos mais próximos de seus respectivos alcances. Se um alvo sofrer mais de um ataque, some os danos recebidos."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando um ataque do guarda chefe atingir um personagem, receba 1 Ponto de Medo."
+      }
+    ]
+  },
+  {
+    "name": "Guerreiro Arcano",
+    "type": "Líder",
+    "tier": 1,
+    "description": "Um mercenário que combina aço e magia de maneira letal.",
+    "motivationsAndTactics": "comandar, golpear, resistir",
+    "difficulty": 14,
+    "threshold": "8/14",
+    "hp": 6,
+    "stress": 3,
+    "attack": {
+      "value": 3,
+      "type": "Espada longa mágica: cac | 1d8+4 fís/mág"
+    },
+    "abilities": [
+      {
+        "name": "Aço Arcano (passiva)",
+        "description": "o dano causado pelo ataque padrão do guerreiro arcano é considerado físico e mágico."
+      },
+      {
+        "name": "Explosão Opressora (ação)",
+        "description": "marque 1 Ponto de Fadiga e escolha um grupo em alcance distante. Todos os alvos devem passar em um teste de reação de Agilidade ou sofrem 1d8+2 pontos de dano mágico. Receba 1 Ponto de Medo para cada alvo que marcar PV por esse ataque."
+      },
+      {
+        "name": "Movimento de Unidade (ação)",
+        "description": "gaste 2 Pontos de Medo para pôr em foco até cinco aliados Distantes."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando o guerreiro arcano acertar um ataque contra um personagem, receba 1 Ponto de Medo."
+      }
+    ]
+  },
+  {
+    "name": "Lobo Atroz",
+    "type": "Oportunista",
+    "tier": 1,
+    "description": "Um grande lobo com dentes ameaçadores, raramente visto sozinho.",
+    "motivationsAndTactics": "arrastar, atormentar, cercar, defender território, proteger alcateia",
+    "difficulty": 12,
+    "threshold": "5/9",
+    "hp": 4,
+    "stress": 3,
+    "attack": {
+      "value": 2,
+      "type": "Garras: corpo a corpo | 1d6+2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Táticas de Bando (passiva)",
+        "description": "se o lobo acertar um ataque padrão e houver outro lobo-atroz corpo a corpo do alvo, ele causa 1d6+5 pontos de dano físico em vez do dano do ataque padrão e receba 1 Ponto de Medo."
+      },
+      {
+        "name": "Golpe Debilitante (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer um ataque contra um alvo corpo a corpo. Em caso de sucesso, o alvo sofre 3d4+10 pontos de dano físico direto e fica Vulnerável até que recupere ao menos 1 Ponto de Vida."
+      }
+    ]
+  },
+  {
+    "name": "Lodo Verde",
+    "type": "Oportunista",
+    "tier": 1,
+    "description": "Um monte vivo feito de gosma verde translúcida.",
+    "motivationsAndTactics": "camuflagem, consumir e se multiplicar, envolver, esgueirar",
+    "difficulty": 8,
+    "threshold": "5/10",
+    "hp": 5,
+    "stress": 2,
+    "attack": {
+      "value": 1,
+      "type": "Tentáculo de lodo: corpo a corpo | 1d6+1 mág"
+    },
+    "abilities": [
+      {
+        "name": "Forma Ácida (passiva)",
+        "description": "quando o lodo acertar um ataque, o alvo deve marcar 1 Ponto de Armadura sem receber seus benefícios (mas ainda pode usar PA para reduzir o dano). Caso não possa marcar 1 PA, o alvo deve marcar 1 Ponto de Vida adicional."
+      },
+      {
+        "name": "Lentidão (passiva)",
+        "description": "se o lodo for posto em foco, mas não tiver nenhum marcador em sua ficha, ele é incapaz de agir. Coloque um marcador na ficha e descreva o que ele está se preparando para fazer. Quando puser o lodo em foco e ele tiver um marcador na ficha, remova o marcador para que ele possa agir."
+      },
+      {
+        "name": "Envolver (ação)",
+        "description": "faça um ataque padrão em um alvo corpo a corpo. Em caso de sucesso, o lodo Envolve o alvo, que deve marcar 2 Pontos de Fadiga. Alvos Envolvidos devem marcar 1 PF adicional ao fazer um teste. Se o lodo sofrer dano grave, o alvo é libertado."
+      },
+      {
+        "name": "Agora São Dois (reação)",
+        "description": "quando o lodo já tiver marcado 3 PV ou mais, você pode gastar 1 Ponto de Medo para dividi-lo em dois lodos verdes pequenos (sem PV ou PF marcados). Ponha ambos em foco imediatamente."
+      }
+    ]
+  },
+  {
+    "name": "Lodo Verde Pequeno",
+    "type": "Oportunista",
+    "tier": 1,
+    "description": "Um montinho vivo feito de gosma verde translúcida.",
+    "motivationsAndTactics": "camuflagem, esgueirar",
+    "difficulty": 14,
+    "threshold": "4/nenhum",
+    "hp": 2,
+    "stress": 1,
+    "attack": {
+      "value": -1,
+      "type": "Tentáculo de lodo: corpo a corpo | 1d4+1 mág"
+    },
+    "abilities": [
+      {
+        "name": "Forma Ácida (passiva)",
+        "description": "quando o lodo acertar um ataque, o alvo deve marcar 1 Ponto de Armadura sem receber seus benefícios (mas ainda pode usar PA para reduzir o dano). Caso não possa marcar 1 PA, o alvo deve marcar 1 Ponto de Vida adicional."
+      }
+    ]
+  },
+  {
+    "name": "Lodo Vermelho",
+    "type": "Oportunista",
+    "tier": 1,
+    "description": "Um monte vivo feito de gosma vermelha flamejante.",
+    "motivationsAndTactics": "camuflagem, incendiar, inflamar, multiplicar",
+    "difficulty": 10,
+    "threshold": "6/11",
+    "hp": 5,
+    "stress": 3,
+    "attack": {
+      "value": 1,
+      "type": "Tentáculo de lodo: corpo a corpo | 1d8+3 mág"
+    },
+    "abilities": [
+      {
+        "name": "Fogo Crepitante (passiva)",
+        "description": "o lodo só pode se mover em alcance muito próximo com seu movimento normal. Ele incendeia qualquer objeto inflamável que toca."
+      },
+      {
+        "name": "Incendiar (ação)",
+        "description": "faça um ataque contra um alvo muito próximo. Em caso de sucesso, o alvo sofre 1d8 pontos de dano mágico e fica Em Chamas até que o fogo seja apagado com suceso em um teste de Acuidade (14). Enquanto estiver Em Chamas, o alvo sofre 1d4 pontos de dano mágico sempre que fizer um teste."
+      },
+      {
+        "name": "Agora São Dois (reação)",
+        "description": "quando o lodo já tiver marcado 3 PV ou mais, você pode gastar 1 Ponto de Medo para dividi-lo em dois lodos vermelhos pequenos (sem PV ou PF marcados). Ponha ambos em foco imediatamente."
+      }
+    ]
+  },
+  {
+    "name": "Lodo Vermelho Pequeno",
+    "type": "Oportunista",
+    "tier": 1,
+    "description": "Um montinho vivo feito de gosma vermelha flamejante.",
+    "motivationsAndTactics": "camuflagem, pegar fogo",
+    "difficulty": 11,
+    "threshold": "5/nenhum",
+    "hp": 2,
+    "stress": 1,
+    "attack": {
+      "value": -1,
+      "type": "Tentáculo de lodo: corpo a corpo | 1d4+2 mág"
+    },
+    "abilities": [
+      {
+        "name": "Incandescente (reação)",
+        "description": "quando uma criatura corpo a corpo causa dano ao lodo, ela sofre 1d6 pontos de dano mágico direto."
+      }
+    ]
+  },
+  {
+    "name": "Mercenário",
+    "type": "Lacaio",
+    "tier": 1,
+    "description": "Um mercenário armado testando a própria sorte.",
+    "motivationsAndTactics": "avançar, dilacerar, lucrar, sobrecarregar",
+    "difficulty": 10,
+    "threshold": "nenhum",
+    "hp": 1,
+    "stress": 1,
+    "attack": {
+      "value": 3,
+      "type": "Espada longa: corpo a corpo | 3 fís"
+    },
+    "abilities": [
+      {
+        "name": "Lacaio (4) (passiva)",
+        "description": "o mercenário é derrotado quando sofre qualquer dano. Para cada 4 pontos de dano causados por um personagem ao mercenário, um lacaio adicional no alcance, e que seria atingido pelo ataque, é derrotado."
+      },
+      {
+        "name": "Ataque em Grupo (ação)",
+        "description": "gaste 1 Ponto de Medo para escolher um alvo e pôr em foco todos os mercenários Próximos dele. Esses lacaios ficam corpo a corpo ao alvo e fazem um teste de ataque compartilhado. Se acertarem, cada um causa 3 pontos de dano físico. Os danos são somados."
+      }
+    ]
+  },
+  {
+    "name": "Mestre de Armas",
+    "type": "Brutamonte",
+    "tier": 1,
+    "description": "Um mestre de armas porta uma espada com o dobro de seu tamanho.",
+    "motivationsAndTactics": "agir primeiro, atacar os mais fracos, intimidar",
+    "difficulty": 14,
+    "threshold": "8/15",
+    "hp": 6,
+    "stress": 3,
+    "attack": {
+      "value": 2,
+      "type": "Claymore: muito próximo | 1d12+2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Ataque Provocante (ação)",
+        "description": "faça um ataque padrão contra um alvo. Em caso de sucesso, marque 1 Ponto de Fadiga para Provocar o alvo até o próximo ataque que ele acertar. Na próxima vez que um alvo Provocado atacar, ele sofre desvantagem contra alvos que não sejam o mestre de armas."
+      },
+      {
+        "name": "Explosão de Adrenalina (ação)",
+        "description": "uma vez por cena, gaste 1 Ponto de Medo para recuperar 2 Pontos de Vida e 2 Pontos de Fadiga."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando o mestre de armas acertar um ataque contra um personagem, receba 1 Ponto de Medo."
+      }
+    ]
+  },
+  {
+    "name": "Mosquitos Gigantes",
+    "type": "Horda",
+    "tier": 1,
+    "description": "Dúzias de mosquitos grandes como punhos, voando juntos como forma de proteção.",
+    "motivationsAndTactics": "incomodar, roubar sangue, voar para longe",
+    "difficulty": 10,
+    "threshold": "5/9",
+    "hp": 6,
+    "stress": 3,
+    "attack": {
+      "value": -2,
+      "type": "Probóscida: corpo a corpo | 1d8+3 fís"
+    },
+    "abilities": [
+      {
+        "name": "Horda (1d4+1) (passiva)",
+        "description": "quando os mosquitos tiverem marcado metade de seus Pontos de Vida ou mais, seu ataque padrão causa 1d4+1 pontos de dano físico, em vez do valor original."
+      },
+      {
+        "name": "Voador (passiva)",
+        "description": "quando estiverem em voo, os mosquitos recebem um bônus de +2 em sua Dificuldade."
+      },
+      {
+        "name": "Hematófago (reação)",
+        "description": "quando o ataque dos mosquitos faz com que um alvo marque Pontos de Vida, você pode marcar 1 Ponto de Fadiga para forçar o alvo a marcar 1 PV adicional."
+      }
+    ]
+  },
+  {
+    "name": "Nobre Menor",
+    "type": "Manipulador",
+    "tier": 1,
+    "description": "Um aristocrata muito bem-vestido exalando arrogância.",
+    "motivationsAndTactics": "abusar de seu poder, mobilizar lacaios, obter recursos",
+    "difficulty": 14,
+    "threshold": "6/10",
+    "hp": 3,
+    "stress": 5,
+    "attack": {
+      "value": -3,
+      "type": "Rapieira: corpo a corpo | 1d6+1 fís"
+    },
+    "abilities": [
+      {
+        "name": "Minha Terra, Minhas Regras (passiva)",
+        "description": "todas as ações sociais feitas contra o nobre em suas terras sofrem desvantagem."
+      },
+      {
+        "name": "Exilar (ação)",
+        "description": "gaste 1 Ponto de Medo e escolha um personagem. O nobre proclama que o alvo e seus aliados sejam exilados de seu território. Enquanto estiverem exilados, o alvo e seus aliados sofrem desvantagem em situações sociais nos domínios do nobre."
+      },
+      {
+        "name": "Guardas! (ação)",
+        "description": "uma vez por cena, marque 1 Ponto de Fadiga para invocar 1d4 guardas armados, que surgem em um ponto em alcance distante para atender às vontades do nobre."
+      }
+    ]
+  },
+  {
+    "name": "Ogro das Cavernas",
+    "type": "Solo",
+    "tier": 1,
+    "description": "Um imenso humanoide que vê toda criatura senciente como comida.",
+    "motivationsAndTactics": "arrancar cabeças com mordidas, arrancar membros, arremessar inimigos, devorar, pisotear",
+    "difficulty": 13,
+    "threshold": "8/15",
+    "hp": 8,
+    "stress": 3,
+    "attack": {
+      "value": 1,
+      "type": "Porrete: muito próximo | 1d10+2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Aceleração (passiva)",
+        "description": "você deve gastar 1 Ponto de Medo para pôr o ogro em foco. Quando estiver em foco, ele pode fazer um ataque padrão contra todos os alvos dentro do alcance."
+      },
+      {
+        "name": "Arrebentar Ossos (passiva)",
+        "description": "ataques do ogro causam dano direto."
+      },
+      {
+        "name": "Chuva de Pedregulhos (ação)",
+        "description": "marque 1 Ponto de Fadiga para levantar objetos pesados e arremessá-los em todos os alvos distantes na frente do ogro. Faça um ataque contra esses alvos, aqueles atingidos pelo ogro sofrem 1d10+2 pontos de dano físico. Caso o ogro atinja mais de um alvo, receba 1 Ponto de Medo."
+      },
+      {
+        "name": "Fúria Violenta (reação)",
+        "description": "quando o ogro marcar 2 Pontos de Vida ou mais, ele pode entrar em fúria. Movimente o ogro para um ponto em alcance Próximo e cause 2d6+3 pontos de dano físico direto em todos os alvos no caminho."
+      }
+    ]
+  },
+  {
+    "name": "Palaciano",
+    "type": "Manipulador",
+    "tier": 1,
+    "description": "Um socialite ambicioso vestido de maneira ostensiva.",
+    "motivationsAndTactics": "bajular, descreditar, manobrar, planejar",
+    "difficulty": 12,
+    "threshold": "4/8",
+    "hp": 3,
+    "stress": 4,
+    "attack": {
+      "value": -4,
+      "type": "Adagas: corpo a corpo | 1d4+2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Bode Expiatório (ação)",
+        "description": "gaste 1 Ponto de Medo para marcar um personagem como alvo. O palaciano convence uma multidão de indivíduos proeminentes de que o alvo é a causa de todos os seus conflitos e infortúnios."
+      },
+      {
+        "name": "Zombaria (ação)",
+        "description": "marque 1 Ponto de Fadiga para dizer algo em tom de zombaria, forçando um alvo Próximo a fazer um teste de reação de Presença (14) para se safar. Se falhar, o alvo deve marcar 2 Pontos de Fadiga e fica Vulnerável até o fim da cena."
+      }
+    ]
+  },
+  {
+    "name": "Pirata Bruto",
+    "type": "Brutamonte",
+    "tier": 1,
+    "description": "Um pirata musculoso e tatuado com punhos grandes como melões.",
+    "motivationsAndTactics": "aterrorizar, esmagar, pilhar, saquear",
+    "difficulty": 13,
+    "threshold": "8/15",
+    "hp": 5,
+    "stress": 3,
+    "attack": {
+      "value": 1,
+      "type": "Punhos massivos: corpo a corpo | 2d6 fís"
+    },
+    "abilities": [
+      {
+        "name": "Espadachim (passiva)",
+        "description": "Quando o pirata bruto marcar 2 Pontos de Vida ou menos por um ataque realizado dentro de alcance corpo a corpo, o atacante deve marcar 1 Ponto de Fadiga."
+      },
+      {
+        "name": "Limpar o Convés (ação)",
+        "description": "Faça um ataque contra um alvo muito próximo. Em caso de sucesso, marque 1 Ponto de Fadiga para se mover até alcance corpo a corpo do alvo, causando 3d4 pontos de dano físico e empurrando alvo para um ponto em alcance Próximo."
+      }
+    ]
+  },
+  {
+    "name": "Punhal Escarpado, Bandido",
+    "type": "Comum",
+    "tier": 1,
+    "description": "Um criminoso ardiloso com a faca icônica de sua gangue.",
+    "motivationsAndTactics": "fugir, lucrar, roubar, usar fumaça",
+    "difficulty": 12,
+    "threshold": "8/14",
+    "hp": 5,
+    "stress": 3,
+    "attack": {
+      "value": 1,
+      "type": "Adagas: corpo a corpo | 1d8+1 fís"
+    },
+    "abilities": [
+      {
+        "name": "Aqui em Cima (passiva)",
+        "description": "quando o bandido acerta um ataque padrão vindo de cima do alvo, ele causa 1d10+1 pontos de dano físico em vez do dano padrão."
+      },
+      {
+        "name": "Escalador (passiva)",
+        "description": "o bandido é capaz de escalar tão facilmente quanto corre."
+      }
+    ]
+  },
+  {
+    "name": "Punhal Escarpado, Seteiro",
+    "type": "Atirador",
+    "tier": 1,
+    "description": "Um bandido esguio que ataca de longe com um arco curto.",
+    "motivationsAndTactics": "emboscar, esconder-se, lucrar, reposicionar-se",
+    "difficulty": 13,
+    "threshold": "4/7",
+    "hp": 3,
+    "stress": 2,
+    "attack": {
+      "value": -1,
+      "type": "Arco curto: distante | 1d10+2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Tiro furtivo (passiva)",
+        "description": "se o seteiro estiver Escondido quando acertar um ataque padrão, ele causa 1d10+4 pontos de dano físico, em vez do dano padrão."
+      }
+    ]
+  },
+  {
+    "name": "Punhal Escarpado, Brigão",
+    "type": "Brutamonte",
+    "tier": 1,
+    "description": "Um fortão imponente com um grande porrete.",
+    "motivationsAndTactics": "agarrar, intimidar, lucrar, roubar",
+    "difficulty": 12,
+    "threshold": "7/14",
+    "hp": 7,
+    "stress": 4,
+    "attack": {
+      "value": -3,
+      "type": "Porrete: corpo a corpo | 1d4+6 fís"
+    },
+    "abilities": [
+      {
+        "name": "Peguei, Chefia (passiva)",
+        "description": "criaturas Imobilizadas pelo brigão sofrem dano dobrado em ataques de outros adversários."
+      },
+      {
+        "name": "Segurar (ação)",
+        "description": "faça um ataque contra um alvo corpo a corpo. Em caso de sucesso, o alvo não sofre dano, mas fica Imobilizado e Vulnerável. O alvo pode se libertar das duas condições com sucesso em um teste de Força ou se o brigão do punhal escarpado sofrer dano maior ou superior."
+      }
+    ]
+  },
+  {
+    "name": "Punhal Escarpado, Bruxo",
+    "type": "Assistente",
+    "tier": 1,
+    "description": "Um bandido de cajado, vestindo uma capa adornada com parafernália mágica, que usa feitiços contra seus inimigos.",
+    "motivationsAndTactics": "comandar, enfeitiçar, lucrar",
+    "difficulty": 13,
+    "threshold": "5/9",
+    "hp": 4,
+    "stress": 4,
+    "attack": {
+      "value": 2,
+      "type": "Cajado: distante | 1d6+2 mág"
+    },
+    "abilities": [
+      {
+        "name": "Amaldiçoar (ação)",
+        "description": "escolha um alvo distante para ser temporariamente Amaldiçoado. Enquanto o alvo estiver Amaldiçoado, você pode marcar 1 Ponto de Fadiga para forçar as rolagens com Esperança do alvo a serem rolagens com Medo."
+      },
+      {
+        "name": "Fluxo caótico (ação)",
+        "description": "faça um ataque contra até três alvos muito próximos. Marque 1 Ponto de Fadiga para que todos os alvos atingidos pelo ataque sofram 2d6+3 pontos de dano mágico."
+      }
+    ]
+  },
+  {
+    "name": "Punhal Escarpado, Ladrão",
+    "type": "Lacaio",
+    "tier": 1,
+    "description": "Um ladrão com roupas simples e um pequeno punhal, tentando mostrar a que veio.",
+    "motivationsAndTactics": "escapar, jogar fumaça, lucrar",
+    "difficulty": 9,
+    "threshold": "nenhum",
+    "hp": 1,
+    "stress": 1,
+    "attack": {
+      "value": -2,
+      "type": "Adagas: corpo a corpo | 2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Lacaio (3) (passiva)",
+        "description": "o ladrão é derrotado quando sofre qualquer dano. Para cada 3 pontos de dano causados por um personagem ao ladrão, um lacaio adicional no alcance, e que seria atingido pelo ataque, é derrotado."
+      },
+      {
+        "name": "Ataque em Grupo (ação)",
+        "description": "gaste 1 Ponto de Medo para escolher um alvo e pôr em foco todos os ladrões do punhal escarpado Próximos dele. Esses lacaios ficam corpo a corpo ao alvo e fazem um teste de ataque compartilhado. Se acertarem, cada um causa 2 pontos de dano físico. Os danos são somados."
+      }
+    ]
+  },
+  {
+    "name": "Punhal Escarpado, Chefe",
+    "type": "Líder",
+    "tier": 1,
+    "description": "Um bandido veterano bem-vestido, com voz poderosa e olhar astuto.",
+    "motivationsAndTactics": "chamar reforços, comandar, lucrar, valentia",
+    "difficulty": 13,
+    "threshold": "7/14",
+    "hp": 6,
+    "stress": 3,
+    "attack": {
+      "value": 2,
+      "type": "Dardo: próximo | 1d8+3 fís"
+    },
+    "abilities": [
+      {
+        "name": "Golpe de Misericórdia (ação)",
+        "description": "gaste 1 Ponto de Medo para fazer um ataque contra um alvo próximo que esteja Vulnerável. Em caso de sucesso, o alvo sofre 2d6+12 pontos de dano físico e deve marcar 1 Ponto de Fadiga."
+      },
+      {
+        "name": "Táticas (ação)",
+        "description": "quando puser o chefe em foco, marque 1 Ponto de Fadiga para também pôr dois aliados próximos em foco."
+      },
+      {
+        "name": "Tem Mais de Onde Veio (ação)",
+        "description": "invoque três ladrões do punhal escarpado, que surgem em um ponto em alcance distante."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando o chefe acertar um ataque contra um personagem, receba 1 Ponto de Medo."
+      }
+    ]
+  },
+  {
+    "name": "Punhal Escarpado, Sombra",
+    "type": "Oportunista",
+    "tier": 1,
+    "description": "Um canalha ágil portando uma faca perigosa e usando sombras mágicas para isolar seus alvos.",
+    "motivationsAndTactics": "dividir, emboscar, esconder, lucrar",
+    "difficulty": 12,
+    "threshold": "4/8",
+    "hp": 3,
+    "stress": 3,
+    "attack": {
+      "value": 1,
+      "type": "Adagas: corpo a corpo | 1d4+4 fís"
+    },
+    "abilities": [
+      {
+        "name": "Golpe Traiçoeiro (passiva)",
+        "description": "quando a sombra for bem-sucedida em um ataque padrão feito com vantagem, ela causa 1d6+6 pontos de dano físico em vez do dano padrão."
+      },
+      {
+        "name": "Ocultar (ação)",
+        "description": "a sombra fica Escondida até o próximo ataque que fizer. Testes de ataque enquanto estiver Escondida por esta ação são feitos com vantagem."
+      }
+    ]
+  },
+  {
+    "name": "Saqueador",
+    "type": "Comum",
+    "tier": 1,
+    "description": "Um lutador ágil armado com dardos.",
+    "motivationsAndTactics": "flanquear, lucrar, pilhar, saquear",
+    "difficulty": 12,
+    "threshold": "5/9",
+    "hp": 3,
+    "stress": 3,
+    "attack": {
+      "value": 1,
+      "type": "Dardo: Próximo | 1d6+2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Distanciar (passiva)",
+        "description": "após fazer um ataque padrão, o saqueador pode se mover para qualquer ponto em alcance distante."
+      },
+      {
+        "name": "Recuar (reação)",
+        "description": "quando uma criatura fica corpo a corpo para fazer um ataque no saqueador, você pode marcar 1 Ponto de Fadiga antes do teste de ataque para se mover para um ponto em alcance Próximo e fazer um ataque contra a criatura. Se acertar, o alvo sofre 1d10+2 pontos de dano físico."
+      }
+    ]
+  },
+  {
+    "name": "Soldado Silvestre",
+    "type": "Comum",
+    "tier": 1,
+    "description": "Um guerreiro feérico com armadura de folhas e casca de árvore.",
+    "motivationsAndTactics": "carregar, emboscar, esconder, proteger, trilhar",
+    "difficulty": 11,
+    "threshold": "6/11",
+    "hp": 4,
+    "stress": 2,
+    "attack": {
+      "value": 0,
+      "type": "Foice: corpo a corpo | 1d8+1 fís"
+    },
+    "abilities": [
+      {
+        "name": "Táticas de Bando (passiva)",
+        "description": "se o soldado acertar um ataque padrão e houver outro soldado silvestre corpo a corpo do alvo, ele causa 1d8+5 pontos de dano físico, em vez do dano padrão."
+      },
+      {
+        "name": "Controle Florestal (ação)",
+        "description": "gaste 1 Ponto de Medo para derrubar uma árvore próxima. Uma criatura atingida pela árvore deve passar em um teste de reação de Agilidade (15) ou sofre 1d10 pontos de dano físico."
+      },
+      {
+        "name": "Camuflar-se (reação)",
+        "description": "quando o soldado acertar um ataque, você pode marcar 1 Ponto de Fadiga para ficar Escondido até o Próximo ataque do soldado, ou até que um personagem passe em um teste de Instinto (14) para encontrá-lo."
+      }
+    ]
+  },
+  {
+    "name": "Rato Gigante",
+    "type": "Lacaio",
+    "tier": 1,
+    "description": "Um roedor do tamanho de um gato, habituado a sobreviver.",
+    "motivationsAndTactics": "cavar, coletar, desgastar, fome",
+    "difficulty": 10,
+    "threshold": "nenhum",
+    "hp": 1,
+    "stress": 1,
+    "attack": {
+      "value": -4,
+      "type": "Garras: corpo a corpo | 1 fís"
+    },
+    "abilities": [
+      {
+        "name": "Lacaio (3) (passiva)",
+        "description": "o rato é derrotado quando sofre qualquer dano. Para cada 3 pontos de dano causados por um personagem ao rato, um lacaio adicional no alcance, e que seria atingido pelo ataque, é derrotado."
+      },
+      {
+        "name": "Ataque em Grupo (ação)",
+        "description": "gaste 1 Ponto de Medo para escolher um alvo e pôr em foco todos os ratos gigantes Próximos dele. Esses lacaios ficam corpo a corpo ao alvo e fazem um teste de ataque compartilhado. Se acertarem, cada um causa 1 ponto de dano físico. Os danos são somados."
+      }
+    ]
+  },
+  {
+    "name": "Roedor Corrosivo",
+    "type": "Solo",
+    "tier": 1,
+    "description": "Um inseto do tamanho de um cavalo com garras fortes e sangue ácido.",
+    "motivationsAndTactics": "arrastar, alimentar, escavar, reposicionar",
+    "difficulty": 14,
+    "threshold": "8/15",
+    "hp": 8,
+    "stress": 3,
+    "attack": {
+      "value": 3,
+      "type": "Garras: muito próximo | 1d12+2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Inclemente (3) (passiva)",
+        "description": "o roedor pode ser posto em foco até 3 vezes por turno do mestre. Gaste Pontos de Medo normalmente para colocá-lo em foco."
+      },
+      {
+        "name": "Cuspe Ácido (ação)",
+        "description": "faça um ataque contra todos os alvos próximos na frente do roedor. Alvos atingidos sofrem 2d6 pontos de dano físico e devem marcar 1 Ponto de Armadura sem receber seus benefícios (mas ainda podem usar PA para reduzir o dano). Se não for possível marcar 1 PA, o alvo deve marcar 1 Ponto de Vida adicional e você recebe 1 Ponto de Medo."
+      },
+      {
+        "name": "Erupção de Terra (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer o roedor saltar para fora da terra. Todas as criaturas muito próximas devem passar em um teste de reação de Agilidade ou serão derrubadas, ficando Vulneráveis até que ajam novamente."
+      },
+      {
+        "name": "Sangue ácido (reação)",
+        "description": "quando o roedor sofre dano grave, todas as criaturas próximas são banhadas em seu sangue ácido, sofrendo 1d10 pontos de dano físico. A chuva de sangue cobre o chão em alcance muito próximo, e todas as criaturas além do roedor que se movam pela área sofrem 1d6 pontos de dano físico."
+      }
+    ]
+  },
+  {
+    "name": "Urso",
+    "type": "Brutamonte",
+    "tier": 1,
+    "description": "Um grande urso de pelo espesso e garras poderosas.",
+    "motivationsAndTactics": "defender território, escalar, rastrear, socar",
+    "difficulty": 14,
+    "threshold": "9/17",
+    "hp": 7,
+    "stress": 2,
+    "attack": {
+      "value": 1,
+      "type": "Garras: corpo a corpo | 1d8+3 fís"
+    },
+    "abilities": [
+      {
+        "name": "Força Avassaladora (passiva)",
+        "description": "alvos que marquem PV por um ataque padrão do urso são empurradas para um ponto em alcance muito próximo."
+      },
+      {
+        "name": "Mordida (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer um ataque contra um alvo corpo a corpo. Em caso de sucesso, o alvo sofre 3d4+10 pontos de dano físico e fica Imobilizado até que se liberte com sucesso em um teste de Força."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando o urso acertar um ataque contra um personagem, receba 1 Ponto de Medo."
+      }
+    ]
+  },
+  {
+    "name": "Zumbi Corpulento",
+    "type": "Brutamonte",
+    "tier": 1,
+    "description": "Um cadáver grande, inchado e zangado.",
+    "motivationsAndTactics": "atirar escombros, bater, destruir, esmagar",
+    "difficulty": 10,
+    "threshold": "8/15",
+    "hp": 7,
+    "stress": 4,
+    "attack": {
+      "value": 2,
+      "type": "Pancada: muito próximo | 1d12+3 fís"
+    },
+    "abilities": [
+      {
+        "name": "Lentidão (passiva)",
+        "description": "se o zumbi for posto em foco, mas não tiver nenhum marcador na sua ficha, ele é incapaz de agir. Coloque um marcador na ficha e descreva o que ele está se preparando para fazer. Quando puser o zumbi em foco e ele tiver um marcador na ficha, remova o marcador para que ele possa agir."
+      },
+      {
+        "name": "Lanhar (ação)",
+        "description": "faça um ataque padrão com vantagem contra um alvo que o zumbi tiver Imobilizado. Em caso de sucesso, o ataque provoca dano direto."
+      },
+      {
+        "name": "Dilacerar (reação)",
+        "description": "quando o Zumbi acertar um ataque padrão, você pode marcar 1 Ponto de Fadiga para Imobilizar o alvo temporariamente e forçá-lo a marcar 2 Pontos de Fadiga."
+      }
+    ]
+  },
+  {
+    "name": "Zumbi Emendado",
+    "type": "Solo",
+    "tier": 1,
+    "description": "Cadáveres se movendo como uma coisa só, com membros grandes, torsos e punhos do tamanho de pequeninos adultos.",
+    "motivationsAndTactics": "absorver corpos, assustar, fome, sacudir",
+    "difficulty": 13,
+    "threshold": "8/15",
+    "hp": 10,
+    "stress": 3,
+    "attack": {
+      "value": 4,
+      "type": "Braços demais: muito próximo | 1d20 fís"
+    },
+    "abilities": [
+      {
+        "name": "Destrutível (passiva)",
+        "description": "quando o zumbi sofre dano maior ou superior, ele marca 1 Ponto de Vida adicional."
+      },
+      {
+        "name": "Membros Demais (passiva)",
+        "description": "quando o zumbi fizer um ataque padrão, ele pode atacar todos os alvos muito próximos."
+      },
+      {
+        "name": "Berro Atormentado (ação)",
+        "description": "marque 1 PF para obrigar todos os personagens distantes a fazer um teste de reação de Presença (13). A cada falha, quem falhou perde 1 Ponto de Esperança e você recebe 1 Ponto de Medo. Quem passar deve marcar 1 PF."
+      },
+      {
+        "name": "Outro para a Pilha (ação)",
+        "description": "quando o zumbi estiver muito próximo de um cadáver, ele pode incorporá-lo em si mesmo, recuperando 1 PV e 1 PF."
+      }
+    ]
+  },
+  {
+    "name": "Zumbi Putrefato",
+    "type": "Lacaio",
+    "tier": 1,
+    "description": "Um cadáver putrefato indo na direção de sua presa.",
+    "motivationsAndTactics": "cercar, devorar carne, espancar, fome",
+    "difficulty": 8,
+    "threshold": "nenhum",
+    "hp": 1,
+    "stress": 1,
+    "attack": {
+      "value": -3,
+      "type": "Mordida: corpo a corpo | 2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Lacaio (3) (passiva)",
+        "description": "o zumbi putrefato é derrotado quando sofre qualquer dano. Para cada 3 pontos de dano causados por um personagem ao zumbi, um lacaio adicional no alcance, e que seria atingido pelo ataque, é derrotado."
+      },
+      {
+        "name": "Ataque em Grupo (ação)",
+        "description": "gaste 1 Ponto de Medo para escolher um alvo e pôr em foco todos os zumbis putrefatos Próximos dele. Esses lacaios ficam corpo a corpo ao alvo e fazem um teste de ataque compartilhado. Se acertarem, cada um causa 2 ponto de dano físico. Os danos são somados."
+      }
+    ]
+  },
+  {
+    "name": "Zumbi Faminto",
+    "type": "Comum",
+    "tier": 1,
+    "description": "Um cadáver animado que estremece ao se mover, movido pela fome.",
+    "motivationsAndTactics": "agrupar, devorar, dilacerar carne, fome",
+    "difficulty": 10,
+    "threshold": "4/6",
+    "hp": 4,
+    "stress": 1,
+    "attack": {
+      "value": 0,
+      "type": "Mordida: corpo a corpo | 1d6+1 fís"
+    },
+    "abilities": [
+      {
+        "name": "Eles são muitos (passiva)",
+        "description": "quando o zumbi estiver corpo a corpo a uma criatura e houver ao menos mais um zumbi Próximo, todos os ataques contra a criatura são feitos com vantagem."
+      },
+      {
+        "name": "Horripilante (passiva)",
+        "description": "alvos que marquem Pontos de Vida por ataques do zumbi também devem marcar 1 Ponto de Fadiga."
+      }
+    ]
+  },
+  {
+    "name": "Horda de Zumbis",
+    "type": "Horda",
+    "tier": 1,
+    "quantity": 2,
+    "description": "Um grupo de cadáveres cambaleantes se movendo juntos por instinto.",
+    "motivationsAndTactics": "consumir carne, fome, machucar",
+    "difficulty": 8,
+    "threshold": "6/12",
+    "hp": 6,
+    "stress": 3,
+    "attack": {
+      "value": -1,
+      "type": "Mordida: corpo a corpo | 1d10+2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Horda (1d4+2) (passiva)",
+        "description": "quando os zumbis tiverem marcado metade de seus Pontos de Vida ou mais, seu ataque padrão causa 1d4+2 pontos de dano físico, em vez do valor original."
+      },
+      {
+        "name": "Exceder (reação)",
+        "description": "quando os zumbis marcarem Pontos de Vida por causa de um ataque cac, você pode marcar 1 Ponto de Fadiga para fazer um ataque padrão contra o atacante."
+      }
+    ]
+  },
+  {
+    "name": "Águia Gigante",
+    "type": "Oportunista",
+    "tier": 2,
+    "description": "Uma imensa ave de rapina com garras manchadas de sangue.",
+    "motivationsAndTactics": "atacar com precisão, caçar, manter-se em movimento",
+    "difficulty": 14,
+    "threshold": "8/19",
+    "hp": 4,
+    "stress": 4,
+    "attack": {
+      "value": 1,
+      "type": "Garras e bico: muito próximo | 2d6+3 fís"
+    },
+    "abilities": [
+      {
+        "name": "Voo (passiva)",
+        "description": "enquanto estiver em voo, a águia sofre um bônus de +3 em sua Dificuldade."
+      },
+      {
+        "name": "Decolar (ação)",
+        "description": "faça um ataque contra um alvo muito próximo. Em caso de sucesso, o alvo sofre 2d4+3 pontos de dano físico e deve passar em um teste de reação de Agilidade, ou fica Imobilizado pelas imensas garras da águia. Se o alvo ficar Imobilizado, a águia decola imediatamente para um ponto em alcance muito distante acima do campo de batalha enquanto o segura."
+      },
+      {
+        "name": "Rasante Mortal (ação)",
+        "description": "marque 1 PF para atacar um alvo distante. Em caso de sucesso, cause 2d10+2 pontos de dano físico e derrube o alvo, tornando-o Vulnerável até que ele aja novamente."
+      },
+      {
+        "name": "Soltar à Morte (ação)",
+        "description": "enquanto estiver em voo, a águia pode soltar um alvo Imobilizado que esteja segurando. Se isso acontecer, o alvo não fica mais Imobilizado, mas começa a cair. Se a queda não for prevenida nas próximas ações do grupo, o alvo sofre 2d20 pontos de dano físico ao bater no chão."
+      }
+    ]
+  },
+  {
+    "name": "Assassino Aprendiz",
+    "type": "Lacaio",
+    "tier": 2,
+    "description": "Um jovem aprendiz ávido para mostrar do que é capaz.",
+    "motivationsAndTactics": "exibir, imprudência, matar, provar seu valor",
+    "difficulty": 13,
+    "threshold": "nenhum",
+    "hp": 1,
+    "stress": 1,
+    "attack": {
+      "value": -1,
+      "type": "Adaga de arremesso: muito próximo | 4 fís"
+    },
+    "abilities": [
+      {
+        "name": "Lacaio (6) (passiva)",
+        "description": "o assassino é derrotado quando sofre qualquer dano. Para cada 6 pontos de dano causados por um personagem ao assassino, um lacaio adicional no alcance, e que seria atingido pelo ataque, é derrotado."
+      },
+      {
+        "name": "Ataque em Grupo (ação)",
+        "description": "gaste 1 Ponto de Medo para escolher um alvo e pôr em foco todos os aprendizes de assassino próximos dele. Esses lacaios ficam em alcance corpo a corpo do alvo e fazem um teste de ataque compartilhado. Se acertarem, cada um causa 4 pontos de dano físico. Os danos são somados."
+      }
+    ]
+  },
+  {
+    "name": "Assassino Envenenador",
+    "type": "Oportunista",
+    "tier": 2,
+    "description": "Um criminoso ardiloso, habilidoso com venenos e emboscadas.",
+    "motivationsAndTactics": "antecipar, envenenar comida e água, matar, ser pago",
+    "difficulty": 14,
+    "threshold": "8/16",
+    "hp": 4,
+    "stress": 4,
+    "attack": {
+      "value": 3,
+      "type": "Adaga de arremesso envenenada: próximo | 2d8+1 fís"
+    },
+    "abilities": [
+      {
+        "name": "Do Nada (passiva)",
+        "description": "o assassino envenenador tem vantagem em testes de ataque realizados enquanto estiver Escondido."
+      },
+      {
+        "name": "Veneno de Presâmia (passiva)",
+        "description": "alvos que marquem Pontos de Vida por um ataque do assassino envenenador se tornam Vulneráveis até que recuperem 1 Ponto de Vida."
+      },
+      {
+        "name": "Fumaça Vertiginosa (ação)",
+        "description": "jogue uma bomba de fumaça que preenche o ar em alcance próximo, deixando todos os alvos na área Tontos. Alvos Tontos sofrem desvantagem em seus próximos testes, então se recuperam da condição."
+      }
+    ]
+  },
+  {
+    "name": "Aparição de Pedra",
+    "type": "Oportunista",
+    "tier": 2,
+    "description": "Um caçador que se esgueira como um leão-da-montanha, com corpo de pedra acinzentada.",
+    "motivationsAndTactics": "defender território, isolar presa, perseguir",
+    "difficulty": 13,
+    "threshold": "11/22",
+    "hp": 6,
+    "stress": 3,
+    "attack": {
+      "value": 3,
+      "type": "Mordida e garras: corpo a corpo | 2d8+6 fís"
+    },
+    "abilities": [
+      {
+        "name": "Passo de Pedra (passiva)",
+        "description": "a aparição pode se mover através de rocha e terra tão bem quanto no ar. Enquanto estiver dentro de rochas e terra, ela fica Escondida e é imune a qualquer dano."
+      },
+      {
+        "name": "Cilada Pedregosa (ação)",
+        "description": "enquanto estiver Escondida, marque 1 Ponto de Fadiga para saltar para um ponto em alcance corpo a corpo de um alvo muito próximo. O alvo deve passar em um teste de reação de Agilidade ou Instinto (15), ou sofre 2d8 pontos de dano físico e fica temporariamente Imobilizado."
+      },
+      {
+        "name": "Rugido de Avalanche (ação)",
+        "description": "gaste 1 Ponto de Medo para rugir enquanto estiver dentro de uma caverna para causar um deslizamento. Todos os alvos próximos devem passar em um teste de reação de Agilidade (14), ou sofrem 2d10 pontos de dano físico. Escombros podem ser removidos com uma Contagem (8)."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando a aparição acertar um ataque contra um personagem, receba 1 Ponto de Medo."
+      }
+    ]
+  },
+  {
+    "name": "ASSASSINO MESTRE",
+    "type": "Líder",
+    "tier": 2,
+    "description": "Um assassino veterano de voz ameaçadora portando uma lâmina fatal.",
+    "motivationsAndTactics": "emboscar, matar, preparar-se para qualquer situação, sobreviver",
+    "difficulty": 15,
+    "threshold": "12/25",
+    "hp": 7,
+    "stress": 5,
+    "attack": {
+      "value": 5,
+      "type": "Adaga de serra: próximo | 2d10+2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Tarde Demais (passiva)",
+        "description": "o assassino mestre causa dano direto enquanto estiver Escondido."
+      },
+      {
+        "name": "Ataque Coordenado (ação)",
+        "description": "marque 1 Ponto de Fadiga para pôr em foco um número de assassinos equivalente ao número de Pontos de Fadiga não marcados do assassino mestre."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando o assassino mestre acertar um ataque contra um personagem, receba 1 Ponto de Medo."
+      },
+      {
+        "name": "Lâmina sutil (reação)",
+        "description": "quando o assassino mestre acerta um ataque contra um alvo Vulnerável, você pode gastar 1 Ponto de Medo para causar dano grave, em vez do dano padrão."
+      }
+    ]
+  },
+  {
+    "name": "BARÃO MERCANTE",
+    "type": "Manipulador",
+    "tier": 2,
+    "description": "Um mercador bem-sucedido no comando de uma grande operação.",
+    "motivationsAndTactics": "abusar do poder, mobilizar lacaios, obter recursos",
+    "difficulty": 15,
+    "threshold": "9/19",
+    "hp": 5,
+    "stress": 3,
+    "attack": {
+      "value": -2,
+      "type": "Rapieira: corpo a corpo | 1d6+2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Os Melhores que o Dinheiro Pode Comprar (ação)",
+        "description": "uma vez por cena, marque 1 Ponto de Fadiga para invocar 1d4+1 adversários de 1º patamar, que surgem Distantes para fazer valer a vontade do barão."
+      },
+      {
+        "name": "Todos Têm um Preço (ação)",
+        "description": "gaste 1 Ponto de Medo para oferecer a um alvo uma barganha perigosa em troca de algo que o alvo deseje ou precise. Um personagem que receba a oferta deve fazer um teste de reação de Presença (17). Se falhar, deve marcar 2 Pontos de Fadiga ou aceitar a oferta."
+      }
+    ]
+  },
+  {
+    "name": "CAIXA DE BATALHA",
+    "type": "Solo",
+    "tier": 2,
+    "description": "Um construto em forma de cubo, com runas diferentes em cada face.",
+    "motivationsAndTactics": "aguardar disfarçado, atropelar inimigos, mudar tática",
+    "difficulty": 15,
+    "threshold": "10/20",
+    "hp": 8,
+    "stress": 6,
+    "attack": {
+      "value": 2,
+      "type": "Pancada: corpo a corpo | 2d6+3 fís"
+    },
+    "abilities": [
+      {
+        "name": "Inclemente (2) (passiva)",
+        "description": "a caixa pode ser posta em foco até 2 vezes por turno do mestre. Gaste Pontos de Medo normalmente para colocá-la em foco."
+      },
+      {
+        "name": "Táticas Aleatórias (ação)",
+        "description": "marque 1 Ponto de Fadiga e role 1d6. A caixa de batalha usa uma das seguintes táticas: 1. Feixe de Mana. A caixa atira um feixe de calor. Faça um ataque contra um alvo distante. Em caso de sucesso, o alvo sofre 2d10+2 pontos de dano mágico. 2. Jatos de Fogo. A caixa se atira para o alto, girando e soltando jatos de fogo. Faça um ataque contra todos os alvos próximos. Alvos atingidos sofrem 2d8 pontos de dano físico. 3. Atropelar. A caixa se move de maneira imprevisível. Faça um ataque contra todos os personagens próximos. Alvos atingidos sofrem 1d6+5 pontos de dano físico e ficam Vulneráveis até que rolem com Esperança. 4. Gás Eletrizado. A caixa dispara um gás prateado que solta raios brilhantes. Todos os alvos próximos devem passar em um teste de reação de Acuidade, ou devem marcar 3 PF. 5. Impacto Atordoante. A caixa salta e provoca um impacto em suas faces, criando um estrondo sônico. Todos os alvos muito próximos devem passar em um teste de reação de Forca, ou ficam Vulneráveis até que a caixa seja derrotada. 6. Ganido Psiônico. A caixa libera um enxame de abelhas mecânicas, cujo zumbido afeta as mentes dos mortais. Todos os alvos próximos devem passar em um teste de reação de Presença ou sofrem 2d4+9 pontos de dano mágico direto."
+      },
+      {
+        "name": "Sobrecarga (reação)",
+        "description": "antes rolar o dano dos ataques da caixa, você pode marcar 1 Ponto de Fadiga para somar 1d6 ao teste de ataque. Além disso, receba 1 Ponto de Medo."
+      },
+      {
+        "name": "Terremoto da Morte (reação)",
+        "description": "quando a caixa marcar seu último Ponto de Vida, a magia que a sustenta rompe em uma explosão de força. Todos os alvos próximos devem passar em um teste de reação de Instinto ou sofrem 2d8+1 pontos de dano mágico."
+      }
+    ]
+  },
+  {
+    "name": "CAVALEIRO DO REINO",
+    "type": "Líder",
+    "tier": 2,
+    "description": "Um soldado condecorado de armadura pesada, montado num cavalo.",
+    "motivationsAndTactics": "atropelar, buscar glória, mostrar dominância",
+    "difficulty": 15,
+    "threshold": "13/26",
+    "hp": 6,
+    "stress": 4,
+    "attack": {
+      "value": 4,
+      "type": "Espada longa: corpo a corpo | 2d10+4 fís"
+    },
+    "abilities": [
+      {
+        "name": "Armadura Reforçada (passiva)",
+        "description": "quando o cavaleiro sofre dano físico, esse dano é reduzido em 3 pontos."
+      },
+      {
+        "name": "Cavaleiro (passiva)",
+        "description": "quando o cavaleiro estiver cavalgando uma montaria, ele recebe um bônus de +2 em sua Dificuldade. Se sofrer dano grave, ele é derrubado de sua montaria e perde o benefício até que seja posto em foco novamente."
+      },
+      {
+        "name": "Ataque Montado (ação)",
+        "description": "se o cavaleiro estiver cavalgando uma montaria, ele se move até alcance distante para fazer um ataque contra um alvo corpo a corpo. Em caso de sucesso, o alvo sofre 2d8+4 pontos de dano físico e deve marcar 1 Ponto de Fadiga."
+      },
+      {
+        "name": "Pelo Reino! (ação)",
+        "description": "marque 1 Ponto de Fadiga para colocar em foco 1d4+1 aliados. Ataques realizados por aliados postos em foco desta forma causam metade do dano."
+      }
+    ]
+  },
+  {
+    "name": "CONSCRITO",
+    "type": "Lacaio",
+    "tier": 2,
+    "description": "Um civil mal treinado enviado para a guerra.",
+    "motivationsAndTactics": "atacar em grupo, seguir ordens, sobreviver",
+    "difficulty": 12,
+    "threshold": "nenhum",
+    "hp": 1,
+    "stress": 1,
+    "attack": {
+      "value": 0,
+      "type": "Lança: muito próximo | 6 fís"
+    },
+    "abilities": [
+      {
+        "name": "Lacaio (6) (passiva)",
+        "description": "o conscrito é derrotado quando sofre qualquer dano. Para cada 6 pontos de dano causados por um personagem ao conscrito, um lacaio adicional no alcance, e que seria atingido pelo ataque, é derrotado."
+      },
+      {
+        "name": "Ataque em Grupo (ação)",
+        "description": "gaste 1 Ponto de Medo para escolher um alvo e pôr em foco todos os conscritos próximos dele. Esses lacaios ficam em alcance corpo a corpo do alvo e fazem um teste de ataque compartilhado. Se acertarem, cada um causa 6 pontos de dano físico. Os danos são somados."
+      }
+    ]
+  },
+  {
+    "name": "CONSELHEIRO REAL",
+    "type": "Manipulador",
+    "tier": 2,
+    "description": "Um bajulador de alta patente com influência sobre a nobreza local.",
+    "motivationsAndTactics": "bajular, produzir evidências, tramar",
+    "difficulty": 14,
+    "threshold": "8/15",
+    "hp": 3,
+    "stress": 3,
+    "attack": {
+      "value": -3,
+      "type": "Varinha: distante | 1d4+3 fís"
+    },
+    "abilities": [
+      {
+        "name": "Objeção Devastadora (passiva)",
+        "description": "um personagem que role menos de 17 em um teste contra o conselheiro deve marcar 1 PF."
+      },
+      {
+        "name": "Bode Expiatório (ação)",
+        "description": "gaste 1 Ponto de Medo para convencer uma multidão ou um indivíduo notável que uma pessoa ou grupo é responsável pelos problemas do alvo. Este se torna hostil à pessoa ou grupo até que seja convencido de sua inocência com sucesso em um teste de Presença (17)."
+      },
+      {
+        "name": "Sussurros Manipuladores (ação)",
+        "description": "marque 1 Ponto de Fadiga para influenciar um NPC corpo a corpo com palavras sussurradas. A opinião do alvo sobre um assunto muda de acordo com a preferência do conselheiro, exceto quando em oposição direta às motivações do alvo."
+      }
+    ]
+  },
+  {
+    "name": "CORTESÃO",
+    "type": "Manipulador",
+    "tier": 2,
+    "description": "Um manipulador competente, mestre das interações sociais.",
+    "motivationsAndTactics": "conseguir patronos, manobrar, seduzir",
+    "difficulty": 13,
+    "threshold": "7/13",
+    "hp": 3,
+    "stress": 4,
+    "attack": {
+      "value": -3,
+      "type": "Adaga: corpo a corpo | 1d4+3 fís"
+    },
+    "abilities": [
+      {
+        "name": "Olhar Abrasador (reação)",
+        "description": "quando um personagem próximo fizer um teste de Presença, você pode marcar 1 Ponto de Fadiga para lançar um olhar agourento. Se o alvo falhar na jogada, deve marcar 2 Pontos de Fadiga e fica Vulnerável até o fim da cena ou até passar em um teste social contra o cortesão; quando fizer isso, ele deve marcar 1 Ponto de Fadiga."
+      }
+    ]
+  },
+  {
+    "name": "CRÂNIO DO CAOS",
+    "type": "Atirador",
+    "tier": 2,
+    "description": "Um crânio flutuante humanoide, animado por magia cintilante.",
+    "motivationsAndTactics": "consumir magia, gargalhar, servir seu criador",
+    "difficulty": 15,
+    "threshold": "8/16",
+    "hp": 5,
+    "stress": 4,
+    "attack": {
+      "value": 2,
+      "type": "Raio de energia: próximo | 2d8+3 mág"
+    },
+    "abilities": [
+      {
+        "name": "Levitação (passiva)",
+        "description": "o crânio levita a vários centímetros do chão e não pode ser Imobilizado."
+      },
+      {
+        "name": "Proteção (passiva)",
+        "description": "o crânio é resistente a dano mágico."
+      },
+      {
+        "name": "Explosão Mágica (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer um ataque contra todos os alvos próximos. Alvos atingidos sofrem 2d6+4 pontos de dano mágico."
+      },
+      {
+        "name": "Sorver Magia (ação)",
+        "description": "gaste 1 Ponto de Medo para fazer um ataque contra um personagem muito próximo que tenha um atributo de conjuração. Em caso de sucesso, o alvo deve marcar 1d4 PF, e o crânio recupera esse mesmo valor de Pontos de Fadiga. Além disso, se acertar o ataque, o crânio pode imediatamente ser posto em foco de novo."
+      }
+    ]
+  },
+  {
+    "name": "CULTISTA INICIADO",
+    "type": "Lacaio",
+    "tier": 2,
+    "description": "Um cultista de baixo escalão em robes simples, ávido a obter poder.",
+    "motivationsAndTactics": "buscar conhecimento proibido, obter poder, seguir ordens",
+    "difficulty": 13,
+    "threshold": "nenhum",
+    "hp": 1,
+    "stress": 1,
+    "attack": {
+      "value": 0,
+      "type": "Adaga ritualística: corpo a corpo | 5 fís"
+    },
+    "abilities": [
+      {
+        "name": "Lacaio (6) (passiva)",
+        "description": "o cultista é derrotado quando sofre qualquer dano. Para cada 6 pontos de dano causados por um personagem ao cultista, um lacaio adicional no alcance, e que seria atingido pelo ataque, é derrotado."
+      },
+      {
+        "name": "Ataque em Grupo (ação)",
+        "description": "gaste 1 Ponto de Medo para escolher um alvo e pôr em foco todos os cultistas iniciados próximos dele. Esses lacaios ficam em alcance corpo a corpo do alvo e fazem um teste de ataque compartilhado. Se acertarem, cada um causa 5 pontos de dano físico. Os danos são somados."
+      }
+    ]
+  },
+  {
+    "name": "CULTISTA ADEPTO",
+    "type": "Assistente",
+    "tier": 2,
+    "description": "Um mago experiente que lida com sombras e medo.",
+    "motivationsAndTactics": "atrapalhar inimigos, bajular, fazer descobertas",
+    "difficulty": 14,
+    "threshold": "9/18",
+    "hp": 4,
+    "stress": 6,
+    "attack": {
+      "value": 2,
+      "type": "Cajado de runas: distante | 2d4+3 mág"
+    },
+    "abilities": [
+      {
+        "name": "Ataque Inquietante (ação)",
+        "description": "gaste 1 Ponto de Medo para fazer um ataque padrão contra um alvo dentro do alcance. Em caso de sucesso, o alvo deve marcar 1 Ponto de Fadiga."
+      },
+      {
+        "name": "Grilhões de Sombra (ação)",
+        "description": "gaste 1 Ponto de Medo e escolha um ponto em alcance distante. Todos os alvos próximos desse ponto ficam Imobilizados por correntes de névoa até que se libertem com sucesso em um teste de Força ou Instinto. Um alvo Imobilizado por essa habilidade deve gastar 1 Ponto de Esperança para fazer esse teste."
+      },
+      {
+        "name": "Manto dos Caídos (ação)",
+        "description": "marque 1 Ponto de Fadiga para envolver um aliado próximo em um manto de Proteção até que o cultista adepto marque seu último Ponto de Vida. Enquanto estiver Protegido, o alvo possui resistência a todo tipo de dano."
+      },
+      {
+        "name": "Seu Medo É Meu Refúgio (reação)",
+        "description": "duas vezes por cena, quando um personagem rolar uma falha com Medo, recupere 1 PF."
+      }
+    ]
+  },
+  {
+    "name": "CULTISTA SICÁRIO",
+    "type": "Oportunista",
+    "tier": 2,
+    "description": "Um assassino profissional que se tornou cultista.",
+    "motivationsAndTactics": "capturar sacrifícios, isolar presas, subir cargos",
+    "difficulty": 15,
+    "threshold": "9/17",
+    "hp": 4,
+    "stress": 4,
+    "attack": {
+      "value": 2,
+      "type": "Faca longa: corpo a corpo | 2d8+4 fís"
+    },
+    "abilities": [
+      {
+        "name": "Abraço da Sombra (passiva)",
+        "description": "o sicário é capaz de escalar e caminhar por superfícies verticais. Marque 1 Ponto de Fadiga para se mover de uma sombra à outra em alcance distante."
+      },
+      {
+        "name": "Não Fique Para Trás (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer com que um alvo corpo a corpo faça um teste de reação de Instinto. Se falhar, o alvo deve marcar 2 Pontos de Fadiga, e é teleportado, junto ao sicário, para uma sombra distante, além de ficar temporariamente Vulnerável. Se passar, o alvo deve marcar 1 Ponto de Fadiga."
+      }
+    ]
+  },
+  {
+    "name": "ENGUIAS-ELÉTRICAS",
+    "type": "Horda",
+    "tier": 2,
+    "quantity": 2,
+    "description": "Um bando de enguias que cercam e eletrocutam suas vítimas.",
+    "motivationsAndTactics": "eletrocutar presas, evitar grandes predadores, partir em pedaços",
+    "difficulty": 14,
+    "threshold": "10/20",
+    "hp": 5,
+    "stress": 3,
+    "attack": {
+      "value": 0,
+      "type": "Mordida chocante: corpo a corpo | 2d6+4 fís"
+    },
+    "abilities": [
+      {
+        "name": "Horda (2d4+1) (passiva)",
+        "description": "quando as enguias tiverem marcado metade de seus Pontos de Vida ou mais, seu ataque padrão causa 2d4+1 pontos de dano físico, em vez do valor original."
+      },
+      {
+        "name": "Choque Paralisante (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer um ataque padrão contra todos os alvos muito próximos. Receba 1 Ponto de Medo a cada alvo que marcar Pontos de Vida."
+      }
+    ]
+  },
+  {
+    "name": "ESPECTRO ARQUEIRO",
+    "type": "Atirador",
+    "tier": 2,
+    "description": "Um lutador fantasma com um arco etéreo, incapaz de seguir em frente.",
+    "motivationsAndTactics": "atravessar objetos sólidos, ficar longe do conflito, recomeçar batalhas antigas",
+    "difficulty": 13,
+    "threshold": "6/14",
+    "hp": 3,
+    "stress": 3,
+    "attack": {
+      "value": 3,
+      "type": "Arco longo: distante | 2d10+2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Fantasma (passiva)",
+        "description": "o espectro é resistente a dano físico. Marque 1 Ponto de Fadiga para movê-lo para um ponto em alcance próximo atravessando objetos sólidos."
+      },
+      {
+        "name": "Escolher Alvo (ação)",
+        "description": "gaste 1 Ponto de Medo para fazer um ataque contra um personagem distante que esteja muito próximo de pelo menos dois outros personagens. Em caso de sucesso, o alvo sofre 2d8+12 pontos de dano físico."
+      }
+    ]
+  },
+  {
+    "name": "ESPECTRO CAPITÃO",
+    "type": "Líder",
+    "tier": 2,
+    "description": "Um comandante fantasmagórico que lidera tropas do além-túmulo.",
+    "motivationsAndTactics": "atravessar objetos sólidos, comandar tropas, recomeçar batalhas antigas",
+    "difficulty": 16,
+    "threshold": "13/26",
+    "hp": 6,
+    "stress": 4,
+    "attack": {
+      "value": 3,
+      "type": "Arco longo: distante | 2d10+3 fís"
+    },
+    "abilities": [
+      {
+        "name": "Fantasma (passiva)",
+        "description": "o espectro é resistente a dano físico. Marque 1 Ponto de Fadiga para movê-lo para um ponto em alcance próximo atravessando objetos sólidos."
+      },
+      {
+        "name": "Batalha Sem Fim (ação)",
+        "description": "gaste 2 Pontos de Medo para trazer de volta até 1d4+1 aliados espectrais derrotados para a batalha nos locais em que surgiram originalmente (sem PV ou PF marcados)."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando o capitão acertar um ataque contra um personagem, receba 1 Ponto de Medo."
+      },
+      {
+        "name": "Manter posições (reação)",
+        "description": "se aliados espectrais do capitão forem forçados a fazer um teste de reação, você pode marcar 1 Ponto de Fadiga para dar a esses aliados um bônus de +2 no teste."
+      }
+    ]
+  },
+  {
+    "name": "ESQUADRÃO DE ARQUEIROS",
+    "type": "Horda",
+    "tier": 2,
+    "quantity": 2,
+    "description": "Um grupo de arqueiros portando arcos massivos.",
+    "motivationsAndTactics": "atirar fogo, manter-se juntos, sobreviver",
+    "difficulty": 13,
+    "threshold": "8/16",
+    "hp": 4,
+    "stress": 3,
+    "attack": {
+      "value": 0,
+      "type": "Arco longo: distante | 2d6+3 fís"
+    },
+    "abilities": [
+      {
+        "name": "Horda (1d6+3) (passiva)",
+        "description": "quando o esquadrão tiver marcado metade de seus Pontos de Vida ou mais, seu ataque padrão causa 1d6+3 pontos de dano físico, em vez do valor original."
+      },
+      {
+        "name": "Saraivada Concentrada (ação)",
+        "description": "marque 1 Ponto de Fadiga para escolher um ponto em alcance distante. Até a próxima rolagem com Medo, qualquer criatura que se mova em alcance próximo do ponto escolhido deve fazer um teste de reação de Agilidade. Se falhar, a criatura sofre 2d6+3 pontos de dano físico. Se passar, sofre metade do dano."
+      },
+      {
+        "name": "Saraivada Focada (ação)",
+        "description": "gaste 1 Ponto de Medo para escolher um ponto em alcance distante. Faça um ataque com vantagem contra todos os alvos próximos do ponto escolhido. Alvos atingidos sofrem 1d10+4 pontos de dano físico."
+      }
+    ]
+  },
+  {
+    "name": "ESPECTRO GUARDIÃO",
+    "type": "Comum",
+    "tier": 2,
+    "description": "Um lutador fantasmagórico com lanças e espadas, preso em seu dever.",
+    "motivationsAndTactics": "atravessar objetos sólidos, proteger tesouro, recomeçar batalhas antigas",
+    "difficulty": 15,
+    "threshold": "7/15",
+    "hp": 4,
+    "stress": 3,
+    "attack": {
+      "value": 1,
+      "type": "Lança: muito próximo | 2d8+1 fís"
+    },
+    "abilities": [
+      {
+        "name": "Fantasma (passiva)",
+        "description": "o espectro é resistente a dano físico. Marque 1 Ponto de Fadiga para movê-lo para um ponto em alcance próximo atravessando objetos sólidos."
+      },
+      {
+        "name": "Lâmina Túmular (ação)",
+        "description": "gaste 1 Ponto de Medo para fazer um ataque contra um alvo muito próximo. Em caso de sucesso, o alvo sofre 2d10+6 pontos de dano físico e deve marcar 1 PF."
+      }
+    ]
+  },
+  {
+    "name": "ESPIÃO",
+    "type": "Manipulador",
+    "tier": 2,
+    "description": "Um agente secreto habilidoso com o hábito de estar no local certo para escutar segredos.",
+    "motivationsAndTactics": "bisbilhotar, cortar e correr, disfarçar aparência",
+    "difficulty": 15,
+    "threshold": "8/17",
+    "hp": 4,
+    "stress": 3,
+    "attack": {
+      "value": -2,
+      "type": "Adaga: corpo a corpo | 2d6+3 fís"
+    },
+    "abilities": [
+      {
+        "name": "Descobrir Segredos (ação)",
+        "description": "gaste 1 Ponto de Medo para descrever como o espião sabe de um segredo sobre um personagem na cena."
+      },
+      {
+        "name": "Escondido à Vista (reação)",
+        "description": "quando um personagem ou grupo estiver discutindo um assunto sensível, você pode marcar 1 Ponto de Fadiga para revelar que o espião está presente na cena, observando-os. Se o espião escapar para reportar o que descobriu, receba 1d4 Pontos de Medo."
+      }
+    ]
+  },
+  {
+    "name": "EXPERIMENTO FRACASSADO",
+    "type": "Comum",
+    "tier": 2,
+    "description": "Um experimento necromântico fracassado, resultando em algo distorcido e desajeitado.",
+    "motivationsAndTactics": "caçar, devorar, rastrear",
+    "difficulty": 13,
+    "threshold": "12/23",
+    "hp": 3,
+    "stress": 3,
+    "attack": {
+      "value": 1,
+      "type": "Mordida e garras: corpo a corpo | 2d6+5 fís"
+    },
+    "abilities": [
+      {
+        "name": "Resistência Distorcida (passiva)",
+        "description": "o experimento é resistente a dano físico."
+      },
+      {
+        "name": "Investida Cambaleante (ação)",
+        "description": "marque 1 Ponto de Fadiga para pôr o experimento em foco como um movimento adicional do mestre em vez de gastar Medo."
+      },
+      {
+        "name": "Exceder (reação)",
+        "description": "quando o experimento ataca um alvo muito próximo de outros adversários, o ataque do experimento causa dano dobrado."
+      }
+    ]
+  },
+  {
+    "name": "GIGANTE LUTADOR",
+    "type": "Brutamonte",
+    "tier": 2,
+    "description": "Um gigante forte com um martelo de guerra maior que um humano.",
+    "motivationsAndTactics": "bater, derrubar, ganhar a vida, sobrecarregar",
+    "difficulty": 15,
+    "threshold": "14/28",
+    "hp": 7,
+    "stress": 4,
+    "attack": {
+      "value": 2,
+      "type": "Martelo de guerra: muito próximo | 2d12+3 fís"
+    },
+    "abilities": [
+      {
+        "name": "Aríete (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer o gigante avançar até um objeto inanimado próximo que possa ser esmagado por ele (como uma parede, carrinho ou estande de mercado) e o destrua. Todos os alvos muito próximos do objeto devem passar em um teste de reação de Agilidade, ou sofrem 2d4+3 pontos de dano físico dos estilhaços."
+      },
+      {
+        "name": "Contra-ataque Sanguinário (reação)",
+        "description": "quando o gigante marcar 2 Pontos de Vida ou mais por um ataque muito próximo, ele pode fazer um ataque padrão contra o atacante. Em caso de sucesso, ele causa 2d6+15 pontos de dano físico, em vez do dano original."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando o lutador acertar um ataque contra um personagem, receba 1 Ponto de Medo."
+      }
+    ]
+  },
+  {
+    "name": "GIGANTE MESTRE DAS FERAS",
+    "type": "Líder",
+    "tier": 2,
+    "description": "Um guerreiro de armadura de couro, com um chicote e um arco imenso.",
+    "motivationsAndTactics": "comandar, ganhar a vida, imobilizar, manobrar, proteger companheiros animais",
+    "difficulty": 16,
+    "threshold": "12/24",
+    "hp": 6,
+    "stress": 5,
+    "attack": {
+      "value": 2,
+      "type": "Arco longo: distante | 2d8+4 fís"
+    },
+    "abilities": [
+      {
+        "name": "Dois por Um (passiva)",
+        "description": "quando o mestre das feras estiver em foco, você também pode pôr em foco um adversário animal de 1º patamar que esteja sob o controle dele."
+      },
+      {
+        "name": "Companhia Mortal (ação)",
+        "description": "duas vezes por cena, invoque um urso, lobo-atroz ou outro adversário animal semelhante de 1º patamar sob o controle do mestre das feras. O adversário surge num ponto em alcance próximo e é posto em foco imediatamente."
+      },
+      {
+        "name": "Pregar no Chão (ação)",
+        "description": "faça um ataque padrão contra um alvo. Em caso de sucesso, você pode marcar 1 PF para prendê-lo a uma superfície próxima. O alvo preso fica Imobilizado até que se liberte com sucesso em um teste de Acuidade ou Força."
+      }
+    ]
+  },
+  {
+    "name": "GIGANTE RECRUTA",
+    "type": "Lacaio",
+    "tier": 2,
+    "description": "Um lutador gigante de armadura emprestada.",
+    "motivationsAndTactics": "aterrorizar, bater, ganhar a vida, sobrecarregar",
+    "difficulty": 13,
+    "threshold": "nenhum",
+    "hp": 1,
+    "stress": 2,
+    "attack": {
+      "value": 1,
+      "type": "Martelo de guerra: muito próximo | 5 fís"
+    },
+    "abilities": [
+      {
+        "name": "Lacaio () (passiva)",
+        "description": "o recruta é derrotado quando sofre qualquer dano. Para cada 7 pontos de dano causados por um personagem ao recruta, um lacaio adicional no alcance, e que seria atingido pelo ataque, é derrotado."
+      },
+      {
+        "name": "Ataque em Grupo (ação)",
+        "description": "gaste 1 Ponto de Medo para escolher um alvo e pôr em foco todos os gigantes recrutas próximos dele. Esses lacaios ficam em alcance corpo a corpo do alvo e fazem um teste de ataque compartilhado. Se acertarem, cada um causa 5 pontos de dano físico. Os danos são somados."
+      }
+    ]
+  },
+  {
+    "name": "GÓRGONA",
+    "type": "Solo",
+    "tier": 2,
+    "description": "Um humanoide escamoso com cobras na cabeça, armado com um arco dourado e enraivecido por ter sua paz perturbada.",
+    "motivationsAndTactics": "acuar, bater e correr, petrificar, se vingar",
+    "difficulty": 15,
+    "threshold": "13/25",
+    "hp": 9,
+    "stress": 3,
+    "attack": {
+      "value": 4,
+      "type": "Arco curto fúlgido: distante | 2d20+3 mág"
+    },
+    "abilities": [
+      {
+        "name": "Flechas Fúlgidas (passiva)",
+        "description": "quando a górgona acerta um ataque, o alvo fica Iluminado até o fim da cena e não pode se esconder. Testes de ataque feitos contra alvos Iluminados recebem vantagem."
+      },
+      {
+        "name": "Inclemente (2) (passiva)",
+        "description": "a górgona pode ser posta em foco até 2 vezes por turno do mestre. Gaste Pontos de Medo normalmente para colocá-la em foco."
+      },
+      {
+        "name": "Coroa de Serpentes (ação)",
+        "description": "faça um teste de ataque contra um alvo corpo a corpo usando as serpentes protetoras da górgona. Em caso de sucesso, marque 1 Ponto de Fadiga para causar 2d10+4 pontos de dano físico ao alvo e fazê-lo marcar 1 PF."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando a górgona acertar um ataque contra um personagem, receba 1 Ponto de Medo."
+      },
+      {
+        "name": "Olhar Petrificante (reação)",
+        "description": "quando a górgona sofre dano de um adversário próximo, você pode gastar 1 Ponto de Medo para forçar o atacante a fazer um teste de reação de Instinto. Se falhar, ele começa a se transformar em pedra, marcando 1 Ponto de Vida e iniciando uma Contagem de Petrificação (4), que diminui toda vez que a górgona for atacada. Quando a contagem termina, o alvo deve fazer um movimento de morte. Se a górgona for derrotada, a Contagem de Petrificação é interrompida."
+      }
+    ]
+  },
+  {
+    "name": "MAGO DE BATALHA",
+    "type": "Atirador",
+    "tier": 2,
+    "description": "Um mago veterano treinado em mágica destrutiva.",
+    "motivationsAndTactics": "buscar poder, desenvolver novos feitiços, estraçalhar formações",
+    "difficulty": 16,
+    "threshold": "11/23",
+    "hp": 5,
+    "stress": 6,
+    "attack": {
+      "value": 4,
+      "type": "Cajado: distante | 2d10+4 mág"
+    },
+    "abilities": [
+      {
+        "name": "Teleporte de Batalha (passiva)",
+        "description": "antes ou depois de ter feito um ataque padrão, você pode marcar 1 PF para se teleportar para um ponto em alcance distante."
+      },
+      {
+        "name": "Artilharia Arcana (ação)",
+        "description": "gaste 1 Ponto de Medo para lançar uma saraivada de raios mágicos. Todos os alvos na cena precisam realizar um teste de reação de Agilidade. Alvos que falharem sofrem 2d12 pontos de dano mágico. Alvos que passarem sofrem metade do dano."
+      },
+      {
+        "name": "Erupção (ação)",
+        "description": "gaste 1 Ponto de Medo e escolha um ponto em alcance distante. A área muito próxima do ponto explode em terreno intransponível. Todos os alvos dentro da área devem fazer um teste de reação de Agilidade (14). Alvos que falharem sofrem 2d10 pontos de dano físico e são jogados para fora da área. Alvos que passarem sofrem metade do dano e não são movidos."
+      },
+      {
+        "name": "Recuperar Esfera de Proteção (ação)",
+        "description": "marque 1 PF para recuperar a Esfera de Proteção do mago."
+      },
+      {
+        "name": "Esfera de Proteção (reação)",
+        "description": "quando o mago sofre dano de um ataque próximo, cause 2d6 pontos de dano mágico ao atacante. Esta reação não pode ser utilizada novamente até que o mago a recupere com Recuperar Esfera de Proteção, abaixo."
+      }
+    ]
+  },
+  {
+    "name": "PATIFE MASCARADO",
+    "type": "Oportunista",
+    "tier": 2,
+    "description": "Um ladrão astuto com habilidades acrobáticas e predileção por drama.",
+    "motivationsAndTactics": "esconder, evadir, furtar, lucrar",
+    "difficulty": 14,
+    "threshold": "8/17",
+    "hp": 4,
+    "stress": 5,
+    "attack": {
+      "value": 3,
+      "type": "Sabre: corpo a corpo | 2d8+3 fís"
+    },
+    "abilities": [
+      {
+        "name": "Mãos Ágeis (ação)",
+        "description": "faça um ataque contra um alvo corpo a corpo. Em caso de sucesso, o patife causa 1d8+2 pontos de dano físico e rouba um item ou consumível do inventário do alvo."
+      },
+      {
+        "name": "Plano de Fuga (ação)",
+        "description": "marque 1 Ponto de Fadiga para revelar uma armadilha armada pelo patife em algum lugar do campo de batalha. Todos os alvos muito próximos da armadilha devem passar em um teste de reação de Agilidade (13) ou serão puxados pelos pés e pendurados de cabeça para baixo, ficando Imobilizados e Vulneráveis. Libertar-se com sucesso em um teste de Acuidade ou Força (13) encerra as duas condições."
+      }
+    ]
+  },
+  {
+    "name": "MATILHA DEMONÍACA",
+    "type": "Horda",
+    "tier": 2,
+    "quantity": 1,
+    "description": "Cães demoníacos que bruxuleiam com brasas infernais.",
+    "motivationsAndTactics": "agradar seus mestres, causar medo, consumir carne",
+    "difficulty": 15,
+    "threshold": "11/23",
+    "hp": 6,
+    "stress": 3,
+    "attack": {
+      "value": 0,
+      "type": "Garras e presas: corpo a corpo | 2d8+2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Horda (2d4+1) (passiva)",
+        "description": "quando a matilha tiver marcado metade de seus Pontos de Vida ou mais, seu ataque padrão causa 2d4+1 pontos de dano físico, em vez do valor original."
+      },
+      {
+        "name": "Uivo Apavorante (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer com que todos os alvos muito próximos percam 1 Ponto de Esperança. Se o alvo não puder perder 1 Ponto de Esperança, ele deve marcar 2 Pontos de Fadiga em vez disso."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando a matilha acertar um ataque contra um personagem, receba 1 Ponto de Medo."
+      }
+    ]
+  },
+  {
+    "name": "MINOTAURO ARRASADOR",
+    "type": "Brutamonte",
+    "tier": 2,
+    "description": "Um imenso firbolg com cabeça de touro e pavio curto.",
+    "motivationsAndTactics": "consumir, estraçalhar, navegar, perseguir, subjugar",
+    "difficulty": 16,
+    "threshold": "14/27",
+    "hp": 7,
+    "stress": 5,
+    "attack": {
+      "value": 2,
+      "type": "Machado de batalha: muito próximo | 2d8+5 fís"
+    },
+    "abilities": [
+      {
+        "name": "Vocês Vão Se Ver Comigo (passiva)",
+        "description": "é preciso gastar 1 Ponto de Medo para pôr o minotauro em foco. Quando estiver em foco, ele pode fazer um ataque padrão contra todos os alvos no alcance."
+      },
+      {
+        "name": "Estouro (ação)",
+        "description": "marque 1 Ponto de Fadiga para avançar através de um grupo próximo e atacar todos os alvos no caminho do minotauro. Alvos atingidos pelo ataque sofrem 2d6+8 pontos de dano físico e são empurrados para um ponto em alcance muito distante. Um alvo empurrado contra um objeto sólido ou outra criatura sofre +1d6 pontos de dano (some todos os danos)."
+      },
+      {
+        "name": "Sanguinolência (ação)",
+        "description": "faça um ataque contra um alvo muito próximo, movendo o minotauro até ficar em alcance corpo a corpo ao alvo. Se acertar, ele causa 2d8 pontos de dano físico direto."
+      }
+    ]
+  },
+  {
+    "name": "OSCILUME JOVEM",
+    "type": "Solo",
+    "tier": 2,
+    "description": "Um inseto grande como um cavalo, com escamas iridescentes e asas cristalinas que se movem mais rápido do que o olhar.",
+    "motivationsAndTactics": "arrebatar, caçar, colecionar coisas brilhantes",
+    "difficulty": 14,
+    "threshold": "13/26",
+    "hp": 10,
+    "stress": 5,
+    "attack": {
+      "value": 3,
+      "type": "Asas afiadas: muito próximo | 2d10+4 fís"
+    },
+    "abilities": [
+      {
+        "name": "Inclemente (3) (passiva)",
+        "description": "o oscilume pode ser posto em foco até 3 vezes por turno do mestre. Gaste Pontos de Medo normalmente para colocá-lo em foco."
+      },
+      {
+        "name": "Acuidade Inigualável (passiva)",
+        "description": "antes do oscilume fazer um ataque, role 1d6. Se rolar 4 ou mais, a Evasão do alvo é reduzida para a metade contra este ataque."
+      },
+      {
+        "name": "Dança Mental (ação)",
+        "description": "marque 1 Ponto de Fadiga para criar uma exibição mágica que ocupa a mente dos inimigos ao redor. Todos os alvos próximos devem fazer um teste de reação de Instinto. Para cada alvo que falhe, você recebe 1 Ponto de Medo e o oscilume descobre um dos medos do alvo."
+      },
+      {
+        "name": "Sopro Alucinógeno (reação)",
+        "description": "Contagem (ciclo 1d6). Quando o oscilume sofrer dano pela primeira vez, ative a contagem regressiva. Quando ela terminar, o oscilume sopra um gás alucinógeno em todos os alvos Distantes à sua frente. Alvos precisam passar em um teste de reação de Instinto ou têm visões terríveis. Alvos cujos medos o oscilume conheça sofrem desvantagem nesse teste. Alvos que falhem no teste devem marcar 1 Ponto de Fadiga e perder 1 Ponto de Esperança."
+      }
+    ]
+  },
+  {
+    "name": "PORTADOR DOS SEGREDOS",
+    "type": "Líder",
+    "tier": 2,
+    "description": "Um líder clandestino ligado diretamente aos Deuses Caídos.",
+    "motivationsAndTactics": "acumular poder, tomar o comando, tramar",
+    "difficulty": 16,
+    "threshold": "13/26",
+    "hp": 7,
+    "stress": 4,
+    "attack": {
+      "value": 3,
+      "type": "Cajado místico: distante | 2d12 mág"
+    },
+    "abilities": [
+      {
+        "name": "Aproveitar o Momento (ação)",
+        "description": "gaste 2 Pontos de Medo para pôr 1d4 aliados em foco. Ataques feitos por aliados postos em foco por esta ação causam metade do dano."
+      },
+      {
+        "name": "Matilha Demoníaca (reação)",
+        "description": "uma vez por cena, quando o portador dos segredos marcar 2 ou mais PV, você pode marcar 1 PF para invocar uma matilha demoníaca, que surge em um ponto alcance próximo e é imediatamente posta em foco."
+      },
+      {
+        "name": "Ritual de Invocação (reação)",
+        "description": "Contagem (6). Quando o portador dos segredos for posto em foco pela primeira vez, ative a contagem regressiva. Toda vez que o portador marcar Pontos de Vida, diminua a contagem em um valor igual aos PV. Quando a contagem terminar, invoque um demônio menor em um ponto em alcance próximo."
+      },
+      {
+        "name": "Vontade do Mestre (reação)",
+        "description": "quando você puser um aliado distante em foco, marque 1 Ponto de Fadiga para receber 1 Ponto de Medo."
+      }
+    ]
+  },
+  {
+    "name": "PREDADOR MORTAL",
+    "type": "Líder",
+    "tier": 2,
+    "description": "Uma figura morta-viva em um casaco de couro, com olhos atentos e comportamento cruel.",
+    "motivationsAndTactics": "caçar, devorar, rastrear",
+    "difficulty": 16,
+    "threshold": "15/27",
+    "hp": 6,
+    "stress": 4,
+    "attack": {
+      "value": 5,
+      "type": "Dilacerar: muito próximo | 2d12+1 fís"
+    },
+    "abilities": [
+      {
+        "name": "Aterrorizante (passiva)",
+        "description": "quando o predador acerta um ataque, todos os personagens distantes perdem 1 Ponto de Esperança. Receba 1 Ponto de Medo."
+      },
+      {
+        "name": "Marcado para Morrer (ação)",
+        "description": "gaste 1 Ponto de Medo para amaldiçoar um alvo muito próximo com uma marca até o fim da cena. Ataques do predador contra o alvo Marcado causam dano direto. O predador só é capaz de manter um alvo Marcado por vez."
+      },
+      {
+        "name": "Morte Inevitável (ação)",
+        "description": "marque 1 PF para pôr 1d4 aliados em foco. Ataques destes aliados causam metade do dano."
+      },
+      {
+        "name": "Ataque Violento (reação)",
+        "description": "Contagem (ciclo 1d6). Quando o predador estiver em foco pela primeira vez, ative a contagem regressiva. Quando ela terminar, ele se move em uma linha reta até um ponto em alcance distante e faz um ataque contra todos os alvos no caminho. Alvos atingidos sofrem 2d8+2 pontos de dano físico."
+      }
+    ]
+  },
+  {
+    "name": "SEREIA",
+    "type": "Oportunista",
+    "tier": 2,
+    "description": "Uma pessoa meio-peixe, de escamas brilhantes e voz irresistível.",
+    "motivationsAndTactics": "consumir, seduzir presas, vencer com música",
+    "difficulty": 14,
+    "threshold": "9/18",
+    "hp": 5,
+    "stress": 3,
+    "attack": {
+      "value": 2,
+      "type": "Maxilar distendido: corpo a corpo | 2d6+3 fís"
+    },
+    "abilities": [
+      {
+        "name": "Público em Transe (passiva)",
+        "description": "se a sereia fizer um ataque padrão contra um alvo Fascinado por sua canção, o ataque causa 2d10+1 pontos de dano, em vez do dano padrão."
+      },
+      {
+        "name": "Canção Fascinante (ação)",
+        "description": "gaste 1 Ponto de Medo para cantar uma música que afeta todos os alvos próximos, que devem passar em um teste de reação de Instinto, ou ficam Fascinados até marcarem 2 Pontos de Fadiga. Outras sereias próximas do alvo podem marcar 1 Ponto de Fadiga cada para aumentar a Dificuldade do teste de reação em +1. Enquanto estiver Fascinado, o alvo não pode agir e fica Vulnerável."
+      }
+    ]
+  },
+  {
+    "name": "SOLDADO DE ELITE",
+    "type": "Comum",
+    "tier": 2,
+    "description": "Um escudeiro de armadura ou plebeu experiente buscando crescimento.",
+    "motivationsAndTactics": "fazer alianças, manter a ordem, obter glória",
+    "difficulty": 15,
+    "threshold": "9/18",
+    "hp": 4,
+    "stress": 3,
+    "attack": {
+      "value": 1,
+      "type": "Lança: muito próximo | 2d8+4 fís"
+    },
+    "abilities": [
+      {
+        "name": "Reforçar (ação)",
+        "description": "marque 1 Ponto de Fadiga para ficar corpo a corpo a um aliado e fazer um ataque contra um alvo muito próximo. Em caso de sucesso, o alvo sofre 2d10+2 pontos de dano físico e o aliado pode recuperar 1 Ponto de Fadiga."
+      },
+      {
+        "name": "Lealdade do Vassalo (reação)",
+        "description": "quando o soldado estiver muito próximo de um aliado que seja um cavaleiro ou outro nobre prestes a receber dano, ele pode marcar 1 PF para ficar em alcance corpo a corpo do aliado e sofrer o dano em seu lugar."
+      }
+    ]
+  },
+  {
+    "name": "TUBARÃO",
+    "type": "Brutamonte",
+    "tier": 2,
+    "description": "Um grande predador aquático, sempre em ação.",
+    "motivationsAndTactics": "atacar o fraco, isolar a presa, seguir sangue",
+    "difficulty": 14,
+    "threshold": "14/28",
+    "hp": 7,
+    "stress": 3,
+    "attack": {
+      "value": 2,
+      "type": "Mandíbula dentuça: muito próximo | 2d12+1 fís"
+    },
+    "abilities": [
+      {
+        "name": "Aterrorizante (passiva)",
+        "description": "quando o tubarão acerta um ataque, todos os personagens distantes perdem 1 Ponto de Esperança. Receba 1 Ponto de Medo."
+      },
+      {
+        "name": "Mordida Lacerante (passiva)",
+        "description": "quando o tubarão acerta um ataque, o alvo deve marcar 1 PA sem receber seus benefícios (mas ainda pode usar PA para reduzir o dano). Caso não possa marcar 1 PA, o alvo deve marcar 1 PV adicional."
+      },
+      {
+        "name": "Sangue na água (reação)",
+        "description": "quando uma criatura próxima do tubarão marca Pontos de Vida por um ataque de outra criatura, você pode marcar 1 Ponto de Fadiga para pôr ele em foco imediatamente, deixá-lo corpo a corpo ao alvo e fazer um ataque padrão."
+      }
+    ]
+  },
+  {
+    "name": "AUTÔMATO SENTINELA",
+    "type": "Brutamonte",
+    "tier": 3,
+    "description": "Um construto empoeirado com mãos de maça.",
+    "motivationsAndTactics": "destruir a qualquer custo, expurgar, proteger",
+    "difficulty": 17,
+    "threshold": "21/40",
+    "hp": 6,
+    "stress": 3,
+    "attack": {
+      "value": 3,
+      "type": "Maça potente: muito próximo | 2d12+1 fís"
+    },
+    "abilities": [
+      {
+        "name": "Pancada Cinética (passiva)",
+        "description": "alvos que sofram dano do ataque padrão da sentinela são empurrados a um ponto muito próximo."
+      },
+      {
+        "name": "Encaixotar (ação)",
+        "description": "marque 1 Ponto de Fadiga para focar em um alvo muito próximo. O alvo sofre desvantagem em testes de ataque enquanto estiver muito próximo da sentinela. A sentinela só pode focar em um alvo de cada vez."
+      },
+      {
+        "name": "Tiro de Mana (ação)",
+        "description": "gaste 1 Ponto de Medo para causar uma explosão mágica em um ponto em alcance distante. Todos muito próximos do ponto escolhido devem fazer um teste de reação de Agilidade. Quem falhar sofre 2d8+20 pontos de dano mágico e são empurrados para um ponto em alcance próximo. Quem passar sofre metade do dano e não é empurrado."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando a sentinela acertar um ataque contra um personagem, receba 1 Ponto de Medo."
+      }
+    ]
+  },
+  {
+    "name": "AUTÔMATO TORRETA",
+    "type": "Atirador",
+    "tier": 3,
+    "description": "Uma torreta imensa com armadura reforçada e doze pernas mecânicas.",
+    "motivationsAndTactics": "confinar, concentrar fogo, marcar, proteger",
+    "difficulty": 16,
+    "threshold": "20/32",
+    "hp": 5,
+    "stress": 4,
+    "attack": {
+      "value": 3,
+      "type": "Canhão mecanomágico: distante | 3d10+3 mág"
+    },
+    "abilities": [
+      {
+        "name": "Fogo Lento (passiva)",
+        "description": "se você puser a torreta em foco e ela não tiver nenhum marcador, ela não pode fazer um ataque padrão. Coloque um marcador na ficha e descreva o que ela está se preparando para fazer. Quando puser a torreta em foco e ela tiver um marcador na ficha, remova o marcador para que ela possa atacar."
+      },
+      {
+        "name": "Marcar Alvo (ação)",
+        "description": "gaste 1 Ponto de Medo para Marcar um alvo distante, que fica Marcado até a torreta ser destruída ou até o alvo se esconder. A Evasão de um alvo Marcado é reduzida à metade."
+      },
+      {
+        "name": "Concentrar Fogo (reação)",
+        "description": "quando outro adversário causar dano a um alvo distante da torreta, você pode marcar 1 PF para somar o ataque padrão da torreta à rolagem de dano."
+      },
+      {
+        "name": "Detonação (reação)",
+        "description": "quando a torreta for destruída, ela explode. Todos os alvos próximos devem fazer um teste de reação de Agilidade. Quem falhar sofre 3d20 pontos de dano físico. Quem passar sofre metade do dano."
+      }
+    ]
+  },
+  {
+    "name": "AUTÔMATO CARCEREIRO",
+    "type": "Assistente",
+    "tier": 3,
+    "description": "Um construto-jaula com portas metálicas grossas no torso.",
+    "motivationsAndTactics": "bater, carregar para longe, emboscar, proteger",
+    "difficulty": 16,
+    "threshold": "19/33",
+    "hp": 5,
+    "stress": 3,
+    "attack": {
+      "value": 2,
+      "type": "Corpo Esmagador: muito próximo | 3d6+2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Escudo Defensivo (passiva)",
+        "description": "criaturas corpo a corpo ao carcereiro sofrem desvantagem em testes de ataque contra ele. Criaturas aprisionadas dentro dele são imunes a este efeito."
+      },
+      {
+        "name": "Prender (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer um ataque contra um alvo muito próximo. Se acertar, o carcereiro Imobiliza o alvo dentro de si até que passe em um teste de Força (18). Alvos Imobilizados por esta ação só podem atacar o carcereiro."
+      }
+    ]
+  },
+  {
+    "name": "CAVALEIRO CERVO",
+    "type": "Comum",
+    "tier": 3,
+    "description": "Um cavaleiro com imponentes galhadas e usa armadura de espinhos.",
+    "motivationsAndTactics": "eliminar intrusos, isolar, manobrar, proteger a floresta",
+    "difficulty": 17,
+    "threshold": "19/36",
+    "hp": 7,
+    "stress": 5,
+    "attack": {
+      "value": 3,
+      "type": "Espada de vinhas: corpo a corpo | 3d8+3 fis"
+    },
+    "abilities": [
+      {
+        "name": "Aqui em Cima (passiva)",
+        "description": "quando o cavaleiro acerta um ataque padrão vindo de cima do alvo, ele causa 3d12+3 pontos de dano físico, em vez do dano padrão."
+      },
+      {
+        "name": "Lâmina da Floresta (ação)",
+        "description": "gaste 1 Ponto de Medo para fazer um ataque contra todos os alvos muito próximos. Alvos atingidos sofrem dano físico igual a 3d4 + o limiar maior do alvo."
+      },
+      {
+        "name": "Armadura de Espinhos (reação)",
+        "description": "quando o cavaleiro sofre dano de um ataque corpo a corpo, você pode marcar 1 Ponto de Fadiga para causar 1d10+5 pontos de dano físico ao atacante."
+      }
+    ]
+  },
+  {
+    "name": "CENTELHA ELEMENTAL",
+    "type": "Lacaio",
+    "tier": 3,
+    "description": "Uma fagulha ardente de fogo elemental.",
+    "motivationsAndTactics": "crescer, consumir, inflamar",
+    "difficulty": 15,
+    "threshold": "nenhum",
+    "hp": 1,
+    "stress": 1,
+    "attack": {
+      "value": 0,
+      "type": "Explosões de fogo: próximo | 5 mág"
+    },
+    "abilities": [
+      {
+        "name": "Lacaio (9) (passiva)",
+        "description": "a centelha é derrotada quando sofre qualquer dano. Para cada 9 pontos de dano causados por um personagem à centelha, um lacaio adicional no alcance, e que seria atingido pelo ataque, é derrotado."
+      },
+      {
+        "name": "Ataque em Grupo (ação)",
+        "description": "gaste 1 Ponto de Medo para escolher um alvo e pôr em foco todas as centelhas elementais próximas dele. Esses lacaios ficam corpo a corpo ao alvo e fazem um teste de ataque compartilhado. Se acertarem, cada um causa 5 pontos de dano físico. Os danos são somados."
+      }
+    ]
+  },
+  {
+    "name": "DEMÔNIO DA AVAREZA",
+    "type": "Assistente",
+    "tier": 3,
+    "description": "Monstro em trajes de nobre, com chifres circulares adornados por joias.",
+    "motivationsAndTactics": "alimentar avareza, consumir, semear discórdia",
+    "difficulty": 17,
+    "threshold": "15/29",
+    "hp": 6,
+    "stress": 5,
+    "attack": {
+      "value": 2,
+      "type": "Mandíbula faminta: corpo a corpo | 3d6+5 mág"
+    },
+    "abilities": [
+      {
+        "name": "Números Vão Subir (passiva)",
+        "description": "testes de ataque do demônio recebem um bônus igual ao número de punhados de ouro que ele possui."
+      },
+      {
+        "name": "Tudo Tem um Preço (passiva)",
+        "description": "ataques contra o demônio sofrem desvantagem a não ser que o atacante gaste um punhado de ouro. O demônio começa com um número de punhados de ouro igual ao número de personagens. Quando um alvo precisa marcar PV por causa do ataque padrão do demônio, o alvo pode escolher gastar um punhado de ouro no lugar de marcar Pontos de Vida (1 punhado por PV). Punhados de ouro gastos por personagens graças a este efeito são somados ao total do demônio da avareza."
+      },
+      {
+        "name": "Tempo é Dinheiro (ação)",
+        "description": "gaste 3 punhados de ouro (ou 1 Ponto de Medo) para pôr 1d4+1 aliados em foco."
+      }
+    ]
+  },
+  {
+    "name": "DEMÔNIO DO DESESPERO",
+    "type": "Oportunista",
+    "tier": 3,
+    "description": "Um demônio de membros longos, que se infiltra nas sombras.",
+    "motivationsAndTactics": "manter-se nas sombras, minar a determinação, tornar o medo contagiante",
+    "difficulty": 17,
+    "threshold": "18/35",
+    "hp": 6,
+    "stress": 5,
+    "attack": {
+      "value": 3,
+      "type": "Raio miasmático: distante | 3d6+1 mág"
+    },
+    "abilities": [
+      {
+        "name": "Profundezas do Desespero (passiva)",
+        "description": "o demônio causa dano dobrado a personagens com 0 Pontos de Esperança."
+      },
+      {
+        "name": "Esforço é Inútil (ação)",
+        "description": "gaste 1 Ponto de Medo para afetar os espíritos de todos os personagens Distantes. Alvos afetados devem substituir seus Dados de Esperança por 1d8 até rolar um sucesso com Esperança ou até seu próximo descanso."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando o demônio acertar um ataque contra um personagem, receba 1 Ponto de Medo."
+      },
+      {
+        "name": "Amigos São uma Decepção (reação)",
+        "description": "quando um personagem falhar com Medo, você pode marcar 1 PF para fazer com que todos os outros personagens próximos percam 1 Ponto de Esperança."
+      }
+    ]
+  },
+  {
+    "name": "DEMÔNIO DA INVEJA",
+    "type": "Atirador",
+    "tier": 3,
+    "description": "Uma demônio inconstante, de membros esguios e desejos insaciáveis.",
+    "motivationsAndTactics": "guardar rancor, pegar o que é dos outros, usurpar o sucesso alheio",
+    "difficulty": 17,
+    "threshold": "17/30",
+    "hp": 6,
+    "stress": 6,
+    "attack": {
+      "value": 4,
+      "type": "Ataque psíquico: distante | 3d8+3 mág"
+    },
+    "abilities": [
+      {
+        "name": "Mente Desprotegida (passiva)",
+        "description": "o ataque padrão do demônio causa dano direto."
+      },
+      {
+        "name": "Minha Vez (reação)",
+        "description": "quando o demônio marcar Pontos de Vida por um ataque, gaste uma quantidade de Pontos de Medo igual à de PV marcados para fazer o atacante marcar a mesma quantidade de Pontos de Vida."
+      },
+      {
+        "name": "Agora É Meu! (reação)",
+        "description": "quando um personagem muito próximo do demônio sofre dano grave, você pode gastar 1 Ponto de Medo para forçar o alvo a fazer um teste de reação de Acuidade. Se ele falhar, o demônio escolhe um item ou consumível do inventário do alvo e o toma para si."
+      },
+      {
+        "name": "Rivalidade (reação)",
+        "description": "quando uma criatura próxima sofre dano de outro adversário, você pode marcar 1 PF para somar 1d4 à rolagem de dano."
+      }
+    ]
+  },
+  {
+    "name": "DEMÔNIO DA SOBERBA",
+    "type": "Líder",
+    "tier": 3,
+    "description": "Um demônio belo e cruel, com uma lança reluzente e robes elegantes.",
+    "motivationsAndTactics": "clamar vitória prematura, condescendência, provar superioridade",
+    "difficulty": 18,
+    "threshold": "18/36",
+    "hp": 7,
+    "stress": 5,
+    "attack": {
+      "value": 4,
+      "type": "Lança perfeita: muito próximo | 3d10 fís"
+    },
+    "abilities": [
+      {
+        "name": "Aterrorizante (passiva)",
+        "description": "quando o demônio acerta um ataque, todos os personagens Distantes perdem 1 Ponto de Esperança. Receba 1 Ponto de Medo."
+      },
+      {
+        "name": "Dobro ou Nada (passiva)",
+        "description": "quando um personagem distante falhar em um teste, ele pode rolar novamente seu Dado de Medo e ficar com o novo resultado. Se falhar novamente, ele deve marcar 2 PF, enquanto o Demônio recupera 1 Ponto de Fadiga."
+      },
+      {
+        "name": "Perícia Inigualável (ação)",
+        "description": "marque 1 Ponto de Fadiga para causar o dano do ataque padrão do demônio a um alvo próximo."
+      },
+      {
+        "name": "Raiz da Perversidade (ação)",
+        "description": "gaste 1 Ponto de Medo para colocar em foco dois outros demônios Distantes."
+      },
+      {
+        "name": "Sem Comparação (reação)",
+        "description": "quando um personagem próximo do demônio falhar em um teste, o personagem deve marcar 1 PF."
+      }
+    ]
+  },
+  {
+    "name": "DEMÔNIO DA IRA",
+    "type": "Brutamonte",
+    "tier": 3,
+    "description": "Um demônio com punhos gigantescos movido por uma fúria infindável.",
+    "motivationsAndTactics": "alimentar a fúria, causar destruição, impressionar rivais",
+    "difficulty": 17,
+    "threshold": "22/40",
+    "hp": 7,
+    "stress": 5,
+    "attack": {
+      "value": 3,
+      "type": "Punhos: muito próximo | 3d8+1 mág"
+    },
+    "abilities": [
+      {
+        "name": "Ira Implacável (passiva)",
+        "description": "os ataques do demônio causam dano direto."
+      },
+      {
+        "name": "Calor da Batalha (ação)",
+        "description": "gaste 1 Ponto de Medo para enraivecer todos os personagens. Eles devem usar 1d20 como Dado de Medo até o fim da cena."
+      },
+      {
+        "name": "Retaliação (reação)",
+        "description": "quando o demônio sofre dano de um ataque próximo, você pode marcar 1 Ponto de Fadiga para fazer um ataque padrão contra o atacante."
+      },
+      {
+        "name": "Sangue e almas (reação)",
+        "description": "Contagem (ciclo 1d6). Ative a contagem quando um ataque for feito no campo de visão do demônio. A contagem diminui sempre que um personagem for atingido por uma ação violenta. Ao final da contagem, invoque 1d4 demônios menores, que surgem em pontos em alcance próximo."
+      }
+    ]
+  },
+  {
+    "name": "DRAGÃO DO GELO JOVEM",
+    "type": "Solo",
+    "tier": 3,
+    "description": "Um dragão azul com quatro patas poderosas e asas tingidas de gelo.",
+    "motivationsAndTactics": "avalanche, congelar, defender covil, espancar, proteger o que é meu, voar",
+    "difficulty": 18,
+    "threshold": "21/41",
+    "hp": 10,
+    "stress": 6,
+    "attack": {
+      "value": 7,
+      "type": "Mordida e garras: próximo | 4d10 fís"
+    },
+    "abilities": [
+      {
+        "name": "Desespero (passiva)",
+        "description": "quando um personagem distante do dragão rola com Medo, ele perde 1 Ponto de Esperança."
+      },
+      {
+        "name": "Inclemente (3) (passiva)",
+        "description": "o dragão pode ser posto em foco até 3 vezes por turno do mestre. Gaste Ponsos de Medo normalmente para colocá-lo em foco."
+      },
+      {
+        "name": "Romper e Esmagar (passiva)",
+        "description": "se um alvo atingido pelo dragão não marcar Pontos de Armadura para reduzir o dano, o alvo deve marcar 1 Ponto de Fadiga."
+      },
+      {
+        "name": "Avalanche (ação)",
+        "description": "gaste 1 Ponto de Medo para o dragão provocar um grande deslizamento de neve e gelo, cobrindo todas as outras criaturas distantes. Todos os alvos na área devem passar em um teste de reação de Instinto ou serão soterrados por pedras e neve, ficando Vulneráveis até que se libertem dos escombros. Receba 1 Ponto de Medo para cada personagem que falhar no teste."
+      },
+      {
+        "name": "Sopro da Nevasca (ação)",
+        "description": "gaste 2 Pontos de Medo para liberar uma espiral congelante na área próxima na frente do dragão. Todos os alvos na área devem fazer um teste de reação de Agilidade. Quem passar devem marcar 2 Pontos de Fadiga ou sofrer metade do dano a seguir. Quem falhar sofre 4d6+5 pontos de dano mágico e fica Imobilizado pelo gelo até que se liberte com sucesso em um teste de Força."
+      },
+      {
+        "name": "Escamas Congeladas (reação)",
+        "description": "quando uma criatura muito próxima acertar um ataque contra o dragão, ela deve marcar 1 Ponto de Fadiga e fica Arrefecido até o próximo descanso ou até recuperar 1 Ponto de Fadiga. Criaturas Arrefecidas sofrem desvantagem em testes de ataque."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando o dragão acertar um ataque contra um personagem, receba 1 Ponto de Medo."
+      }
+    ]
+  },
+  {
+    "name": "DRÍADE",
+    "type": "Líder",
+    "tier": 3,
+    "description": "Um espírito da natureza em forma de uma árvore humanoide.",
+    "motivationsAndTactics": "cultivar, expulsar, ordenar, preservar floresta",
+    "difficulty": 16,
+    "threshold": "24/38",
+    "hp": 8,
+    "stress": 5,
+    "attack": {
+      "value": 4,
+      "type": "Arco curto outonal: distante | 3d10+1 fís"
+    },
+    "abilities": [
+      {
+        "name": "Área de Espinhos (ação)",
+        "description": "marque 1 Ponto de Fadiga e escolha um ponto em alcance distante. Crie um arbusto de espinhos que cobre a área próxima do ponto escolhido. Todos os alvos na área sofrem 2d6+2 pontos de dano físico quando forem tentar agir. Um alvo deve passar em um teste de Acuidade ou causar mais de 20 pontos de dano à dríade em um ataque para sair da área."
+      },
+      {
+        "name": "Cultivar Mudas (ação)",
+        "description": "gaste 1 Ponto de Medo para cultivar três lacaios entes menores, que surgem em um ponto em alcance próximo e são postos em foco imediatamente."
+      },
+      {
+        "name": "Todos Um (reação)",
+        "description": "quando um aliado próximo morrer, você pode gastar 1 Ponto de Medo para recuperar 2 PV e 2 PF, uma vez que a força vital do aliado retornou à floresta."
+      }
+    ]
+  },
+  {
+    "name": "ENTE CARVALHO",
+    "type": "Brutamonte",
+    "tier": 3,
+    "description": "Uma árvore antiga e sólida, capaz de se movimentar.",
+    "motivationsAndTactics": "bater com galhos, esconder-se à vista, preservar a floresta, fincar raízes",
+    "difficulty": 17,
+    "threshold": "22/40",
+    "hp": 7,
+    "stress": 4,
+    "attack": {
+      "value": 2,
+      "type": "Galho: muito próximo | 3d8+2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Só Uma Árvore (passiva)",
+        "description": "antes de fazer qualquer ataque numa luta, ou depois de se esconder, o ente é indistinguível de outras árvores até que faça algo ou até que um personagem passe em um teste de Instinto para identificá-lo."
+      },
+      {
+        "name": "Barragem de Sementes (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer um ataque contra até três alvos próximos, atirando sementes neles. Alvos atingidos sofrem 2d10+5 pontos de dano físico."
+      },
+      {
+        "name": "Enraizar (ação)",
+        "description": "marque 1 Ponto de Fadiga para Enraizar o ente onde ele estiver, deixando-o Imobilizado enquanto estiver Enraizado. Ele pode encerrar este efeito em vez de se mover quando estiver em foco. Enquanto estiver Enraizado o ente tem resistência a dano físico."
+      }
+    ]
+  },
+  {
+    "name": "ENTE JOVEM",
+    "type": "Lacaio",
+    "tier": 3,
+    "description": "Uma pequena muda senciente.",
+    "motivationsAndTactics": "bater, cercar, misturar-se, preservar a floresta",
+    "difficulty": 14,
+    "threshold": "nenhum",
+    "hp": 1,
+    "stress": 1,
+    "attack": {
+      "value": 0,
+      "type": "Galhos: corpo a corpo | 8 fís"
+    },
+    "abilities": [
+      {
+        "name": "Lacaio (6) (passiva)",
+        "description": "o ente é derrotado quando sofre qualquer dano. Para cada 6 pontos de dano causados por um personagem ao ente, um lacaio adicional no alcance, e que seria atingido pelo ataque, é derrotado."
+      },
+      {
+        "name": "Ataque em Grupo (ação)",
+        "description": "gaste 1 Ponto de Medo para escolher um alvo e pôr em foco todos os entes jovens próximos dele. Esses lacaios ficam em alcance corpo a corpo do alvo e fazem um teste de ataque compartilhado. Se acertarem, cada um causa 8 pontos de dano físico. Os danos são somados."
+      }
+    ]
+  },
+  {
+    "name": "GRANDE ELEMENTAL DA ÁGUA",
+    "type": "Assistente",
+    "tier": 3,
+    "description": "Uma grande onda viva que engole seus inimigos.",
+    "motivationsAndTactics": "afogar, dilúvio, dispersar",
+    "difficulty": 17,
+    "threshold": "17/34",
+    "hp": 5,
+    "stress": 5,
+    "attack": {
+      "value": 3,
+      "type": "Onda devastadora: muito próximo | 3d4+1 mág"
+    },
+    "abilities": [
+      {
+        "name": "Afogar (ação)",
+        "description": "gaste 1 Ponto de Medo para fazer um ataque contra todos os alvos muito próximos. Alvos atingidos pelo elemental ficam Imobilizados e Vulneráveis e começam a se afogar. Um alvo pode se libertar com um sucesso em um teste de Força ou Instinto, que encerran ambas as condições."
+      },
+      {
+        "name": "Jato D’água (ação)",
+        "description": "marque 1 Ponto de Fadiga para atacar um alvo muito próximo. Em caso de sucesso, o alvo sofre 2d4+7 pontos de dano e desvantagem no seu próximo teste. Em caso de falha, o alvo deve marcar 1 Ponto de Fadiga."
+      },
+      {
+        "name": "Maré Alta (reação)",
+        "description": "quando o elemental acerta um ataque padrão, você pode marcar 1 Ponto de Fadiga para empurrar o alvo para um ponto em alcance próximo."
+      }
+    ]
+  },
+  {
+    "name": "GRANDE ELEMENTAL DA TERRA",
+    "type": "Brutamonte",
+    "tier": 3,
+    "description": "Um deslizamento vivo de pedras e poeira, grande como uma casa.",
+    "motivationsAndTactics": "avalanche, derrubar, socar",
+    "difficulty": 17,
+    "threshold": "22/40",
+    "hp": 10,
+    "stress": 4,
+    "attack": {
+      "value": 7,
+      "type": "Punho de pedra: muito próximo | 3d10+1 fís"
+    },
+    "abilities": [
+      {
+        "name": "Lentidão (passiva)",
+        "description": "se o elemental for posto em foco, mas não tiver nenhum marcador em sua ficha, ele é incapaz de agir. Coloque um marcador na ficha e descreva o que ele está se preparando para fazer. Quando puser o elemental em foco e ele tiver um marcador na ficha, remova o marcador para que ele possa agir."
+      },
+      {
+        "name": "Objeto Fixo (passiva)",
+        "description": "um ataque que moveria o elemental o faz em dois alcances a menos (por exemplo, alcance distante se torna muito próximo). Quando o elemental sofrer dano físico, reduza esse dano em 7 pontos."
+      },
+      {
+        "name": "Soterrar (passiva)",
+        "description": "quando o elemental acertar um ataque, o alvo deve perder 1 Ponto de Armadura sem receber seus benefícios (mas ainda pode usar PA para reduzir o dano). Se não puder perder 1 PA, o alvo deve marcar 1 PV adicional."
+      },
+      {
+        "name": "Deslizamento (ação)",
+        "description": "marque 1 Ponto de Fadiga para criar um deslizamento que soterra com escombros a área próxima em frente ao elemental. Todos os alvos na área devem fazer um teste de reação de Agilidade (19). Quem falhar sofre 2d12+5 pontos de dano físico e ficam Vulneráveis até fazer uma rolagem com Esperança. Quem passar sofre metade do dano."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando o elemental acertar um ataque contra um personagem, receba 1 Ponto de Medo."
+      }
+    ]
+  },
+  {
+    "name": "LODO VERDE GIGANTE",
+    "type": "Oportunista",
+    "tier": 3,
+    "description": "Um monte ácido verde mais alto que um humano comum.",
+    "motivationsAndTactics": "camuflagem, envolver, esgueirar, multiplicar-se",
+    "difficulty": 15,
+    "threshold": "15/30",
+    "hp": 7,
+    "stress": 4,
+    "attack": {
+      "value": 3,
+      "type": "Tentáculo de lodo: corpo a corpo | 3d8+1 mág"
+    },
+    "abilities": [
+      {
+        "name": "Forma Ácida (passiva)",
+        "description": "quando o lodo acertar um ataque, o alvo deve marcar 1 Ponto de Armadura sem receber seus benefícios (mas ainda pode usar PA para reduzir o dano). Caso não possa marcar 1 PA, o alvo deve marcar 1 Ponto de Vida adicional."
+      },
+      {
+        "name": "Lentidão (passiva)",
+        "description": "se o lodo for posto em foco, mas não tiver nenhum marcador em sua ficha, ele é incapaz de agir. Coloque um marcador na ficha e descreva o que ele está se preparando para fazer. Quando puser o lodo em foco e ele tiver um marcador na ficha, remova o marcador para que ele possa agir."
+      },
+      {
+        "name": "Envolver (ação)",
+        "description": "faça um ataque padrão em um alvo corpo a corpo. Em caso de sucesso, o lodo Envolve o alvo, que deve marcar 2 Pontos de Fadiga. Alvos Envolvidos devem marcar 1 PF adicional ao fazer um teste. Se o lodo sofrer dano grave, o alvo é libertado."
+      },
+      {
+        "name": "Agora São Dois (reação)",
+        "description": "quando o lodo tiver marcado 4 PV ou mais, você pode gastar 1 Ponto de Medo para dividi-lo em dois lodos verdes (sem PV ou PF marcados) e postos em foco imediatamente."
+      }
+    ]
+  },
+  {
+    "name": "MONARCA",
+    "type": "Manipulador",
+    "tier": 3,
+    "description": "O soberano de uma nação, cercado de privilégios e detentor de poder sem igual em seus domínios.",
+    "motivationsAndTactics": "criar um legado, reger vassalos, vencer rivais",
+    "difficulty": 16,
+    "threshold": "16/32",
+    "hp": 6,
+    "stress": 5,
+    "attack": {
+      "value": 0,
+      "type": "Martelo de guerra: corpo a corpo | 3d6+3 fís"
+    },
+    "abilities": [
+      {
+        "name": "Execute Eles! (ação)",
+        "description": "gaste 1 Ponto de Medo por personagem do grupo de aventureiros para condená-lo por crimes reais ou inventados. Um personagem que passar em um teste de Presença pode exigir um julgamento por combate ou outro tipo de julgamento especial."
+      },
+      {
+        "name": "Guarda da Coroa (ação)",
+        "description": "uma vez por cena, marque 1 PF para invocar seis lacaios de 3º patamar, que surgem em pontos em alcance próximo para servir à vontade do monarca."
+      },
+      {
+        "name": "Casus Belli (reação)",
+        "description": "Contagem de longo prazo (8). Gaste 1 Ponto de Medo para ativar a contagem depois que o desejo de guerra do monarca for revelado. Quando a contagem termina, o monarca terá motivos para enviar sua nação à guerra, e terá apoio por essas motivações. Receba 1d4 Pontos de Medo."
+      }
+    ]
+  },
+  {
+    "name": "MORCEGO ATROZ",
+    "type": "Oportunista",
+    "tier": 3,
+    "description": "O leal animal de estimação de um vampiro.",
+    "motivationsAndTactics": "esconder-se, mergulho rasante, proteger líder",
+    "difficulty": 14,
+    "threshold": "16/30",
+    "hp": 5,
+    "stress": 3,
+    "attack": {
+      "value": 2,
+      "type": "Garras e presas: corpo a corpo | 2d6+7 fís"
+    },
+    "abilities": [
+      {
+        "name": "Voador (passiva)",
+        "description": "enquanto estiver em voo, a Dificuldade do morcego aumenta em +3."
+      },
+      {
+        "name": "Guincho (ação)",
+        "description": "marque 1 Ponto de Fadiga para dar um guincho agudo na direção de todos os alvos Distantes que na frente do morcego. Alvos devem marcar 1d4 PF."
+      },
+      {
+        "name": "Guardião (reação)",
+        "description": "quando um aliado vampiro marca Pontos de Vida, o morcego pode marcar 1 Ponto de Fadiga para voar, ficar corpo a corpo do atacante e fazer um ataque com vantagem contra ele. Em caso de sucesso, o morcego causa 2d6+2 pontos de dano físico."
+      }
+    ]
+  },
+  {
+    "name": "HIDRA",
+    "type": "Solo",
+    "tier": 3,
+    "description": "Um quadrúpede bestial com várias cabeças em pescoços compridos, cada uma munida de presas terríveis.",
+    "motivationsAndTactics": "aterrorizar, devorar, regenerar",
+    "difficulty": 18,
+    "threshold": "19/35",
+    "hp": 10,
+    "stress": 5,
+    "attack": {
+      "value": 3,
+      "type": "Mordida: próximo | 2d12+2 fís"
+    },
+    "abilities": [
+      {
+        "name": "Bicho de Várias Cabeças (passiva)",
+        "description": "a hidra começa com 3 cabeças e pode chegar até 5. Cada vez que a hidra sofrer dano maior ou superior, ela perde uma cabeça."
+      },
+      {
+        "name": "Inclemente (X) (passiva)",
+        "description": "a hidra pode ser posta em foco até X vezes por turno do mestre, sendo X o número de cabeças dela. Gaste Pontos de Medo normalmente para colocá-lo em foco."
+      },
+      {
+        "name": "Berro Aterrorizante (ação)",
+        "description": "todos os personagens distantes perdem 2 Pontos de Esperança."
+      },
+      {
+        "name": "Regeneração (ação)",
+        "description": "se a hidra tiver marcado algum Ponto de Vida, gaste 1 Ponto de Medo para que ela recupere 1 PV e faça crescer novas duas cabeças."
+      },
+      {
+        "name": "Fraqueza Mágica (reação)",
+        "description": "quando a hidra sofre dano mágico, ela fica Atordoada até a próxima rolagem com Medo. Enquanto estiver Atordoada, ela não pode usar Regeneração, mas fica imune a dano mágico."
+      }
+    ]
+  },
+  {
+    "name": "VAMPIRO",
+    "type": "Comum",
+    "tier": 3,
+    "description": "Um morto-vivo inteligente com lábios manchados de sangue e um sorriso de predador.",
+    "motivationsAndTactics": "encantar, enganar, intimidar, morder, sorver",
+    "difficulty": 16,
+    "threshold": "18/35",
+    "hp": 5,
+    "stress": 4,
+    "attack": {
+      "value": 3,
+      "type": "Rapieira: corpo a corpo | 3d8 fís"
+    },
+    "abilities": [
+      {
+        "name": "Mordida Vampírica (ação)",
+        "description": "faça um ataque contra um alvo corpo a corpo. Em caso de sucesso, cause 5d4 pontos de dano físico. Um alvo que marque Pontos de Vida por causa deste ataque perde 1 Ponto de Esperança e deve marcar 1 Ponto de Fadiga. O vampiro, então, recupera 1 PV."
+      },
+      {
+        "name": "Forma de Névoa (reação)",
+        "description": "quando o vampiro sofre dano físico, você pode gastar 1 Ponto de Medo para reduzir esse dano à metade."
+      }
+    ]
+  },
+  {
+    "name": "OSCILUME ADULTO",
+    "type": "Solo",
+    "tier": 3,
+    "description": "Um inseto alado grande como uma casa com escamas iridescentes e asas mais velozes que o olhar.",
+    "motivationsAndTactics": "arrebatar, caçar, colecionar coisas brilhantes, fazer ninhos.",
+    "difficulty": 17,
+    "threshold": "20/35",
+    "hp": 12,
+    "stress": 6,
+    "attack": {
+      "value": 3,
+      "type": "Asas afiadas: muito próximo | 3d20 fís"
+    },
+    "abilities": [
+      {
+        "name": "Inclemente (4) (passiva)",
+        "description": "o oscilume pode ser posto em foco até 4 vezes por turno do mestre. Gaste Pontos de Medo normalmente para colocá-lo em foco."
+      },
+      {
+        "name": "Nunca Erra (passiva)",
+        "description": "quando o oscilume fizer um ataque, a Evasão do alvo é reduzida à metade para este ataque."
+      },
+      {
+        "name": "Voo Mortal (passiva)",
+        "description": "enquanto estiver em voo, o oscilume pode se mover até um ponto em alcance distante em vez de alcance próximo antes de fazer uma ação."
+      },
+      {
+        "name": "Dança Mental (ação)",
+        "description": "marque 1 Ponto de Fadiga para criar uma exibição mágica que ocupa a mente dos inimigos ao redor. Todos os alvos próximos devem fazer um teste de reação de Instinto. Para cada alvo que falhe, você recebe 1 Ponto de Medo e o oscilume descobre um dos medos do alvo."
+      },
+      {
+        "name": "Redemoinho (ação)",
+        "description": "gaste 1 Ponto de Medo para rodopiar, fazendo um ataque contra todos os alvos muito próximos. Alvos atingidos sofrem 3d8 pontos de dano físico direto."
+      },
+      {
+        "name": "Reflexos Sinistros (reação)",
+        "description": "quando o oscilume sofre dano de um ataque próximo, você pode marcar 1 Ponto de Fadiga para reduzir o dano à metade."
+      },
+      {
+        "name": "Sopro Alucinógeno (reação)",
+        "description": "Contagem (ciclo 1d6). Quando o oscilume sofrer dano pela primeira vez, ative a contagem regressiva. Quando ela terminar, o oscilume sopra um gás alucinógeno em todos os alvos Distantes à sua frente. Alvos precisam passar em um teste de reação de Instinto ou têm visões terríveis. Alvos cujos medos o oscilume conheça sofrem desvantagem nesse teste. Alvos que falhem no teste perdem 2 Pontos de Esperança e sofrem 3d8+3 pontos de dano mágico direto."
+      }
+    ]
+  },
+  {
+    "name": "VAMPIRO MESTRE",
+    "type": "Líder",
+    "tier": 3,
+    "description": "Um morto-vivo cativante que se veste com a elegância de um nobre.",
+    "motivationsAndTactics": "criar servos, encantar, intimidar, mandar, voar",
+    "difficulty": 17,
+    "threshold": "22/42",
+    "hp": 6,
+    "stress": 6,
+    "attack": {
+      "value": 5,
+      "type": "Rapieira: corpo a corpo | 2d20+4 fís"
+    },
+    "abilities": [
+      {
+        "name": "Aterrorizante (passiva)",
+        "description": "quando o vampiro acerta um ataque, todos os personagens distantes perdem 1 Ponto de Esperança. Receba 1 Ponto de Medo."
+      },
+      {
+        "name": "Olhe nos Meus Olhos (passiva)",
+        "description": "uma criatura que se mova para ficar corpo a corpo ao vampiro deve fazer um teste de reação de Instinto. Se ela falhar, você recebe 1d4 Pontos de Medo."
+      },
+      {
+        "name": "Começou a Caçada (ação)",
+        "description": "gaste 2 Pontos de Medo para invocar 1d4 vampiros, que surgem em pontos em alcance distante e são postos em foco imediatamente."
+      },
+      {
+        "name": "Consumir Seguidores (ação)",
+        "description": "quando o vampiro estiver corpo a corpo a um aliado, ele pode fazer o aliado marcar 1 Ponto de Vida. O vampiro, então, recupera 1 PV."
+      },
+      {
+        "name": "Drenar Vida (reação)",
+        "description": "quando o vampiro é posto em foco, role 1d8. Se rolar 6 ou mais, todos os alvos muito próximos devem marcar 1 PV."
+      }
+    ]
+  },
+  {
+    "name": "ARQUINECROMANTE",
+    "type": "Líder",
+    "tier": 4,
+    "description": "Um mago em decomposição vestindo robes esfarrapados.",
+    "motivationsAndTactics": "corromper, decompor, fugir para lutar outro dia, ressuscitar",
+    "difficulty": 21,
+    "threshold": "33/66",
+    "hp": 9,
+    "stress": 8,
+    "attack": {
+      "value": 6,
+      "type": "Raio necrótico: distante | 4d12+8 mág"
+    },
+    "abilities": [
+      {
+        "name": "Dança da Morte (ação)",
+        "description": "marque 1 Ponto de Fadiga para pôr em foco 1d4 aliados. Ataques feitos por aliados postos em foco desta maneira causam metade do dano, ou você pode gastar 1 Ponto de Medo para que causem dano completo."
+      },
+      {
+        "name": "Feixe Decadente (ação)",
+        "description": "marque 2 Pontos de Fadiga para fazer com que todos os alvos Distantes façam um teste de reação de Forca. Quem falhar sofre 2d20+12 pontos de dano mágico e você recebe 1 Ponto de Medo. Quem passar sofre metade do dano. Um alvo que marque 2 PV ou mais também deve marcar 2 PF e fica Vulnerável até rolar com Esperança."
+      },
+      {
+        "name": "Portões da Morte (ação)",
+        "description": "gaste 1 Ponto de Medo para invocar uma legião de zumbis, que surge em um ponto em alcance próximo e é posta em foco imediatamente."
+      },
+      {
+        "name": "Hoje Não, Meus Caros (reação)",
+        "description": "quando o arquinecromante tiver marcado 7 Pontos de Vida ou mais, você pode gastar 1 Ponto de Medo para fazê-lo se teleportar para um lugar seguro, onde pode se recuperar. Um personagem que passe em um teste de Instinto pode rastrear o destino do arquinecromante."
+      },
+      {
+        "name": "Sua Vida É Minha (reação)",
+        "description": "Contagem (Ciclo 2d6). Quando o arquinecromante tiver marcado 6 Pontos de Vida ou mais, ative a contagem regressiva. No fim da contagem, você causa 2d10+6 pontos de dano mágico direto a um alvo próximo. O arquinecromante, então, recupera um número de PF ou de PV iguais ao número de PV marcados pelo alvo do ataque."
+      }
+    ]
+  },
+  {
+    "name": "CAÍDO, FEITICEIRO",
+    "type": "Assistente",
+    "tier": 4,
+    "description": "Um mago poderoso aprisionado pelas barganhas que realizou em vida.",
+    "motivationsAndTactics": "adquirir, atormentar, desencorajar, dominar",
+    "difficulty": 19,
+    "threshold": "26/42",
+    "hp": 6,
+    "stress": 5,
+    "attack": {
+      "value": 4,
+      "type": "Cajado Corrupto: distante | 4d6+10 mág"
+    },
+    "abilities": [
+      {
+        "name": "Conflagração (ação)",
+        "description": "gaste 1 Ponto de Medo para liberar uma tempestade de fogo implacável e fazer um ataque contra todos os alvos próximos. Alvos atingidos pelo feiticeiro sofrem 2d10+6 pontos de dano mágico direto."
+      },
+      {
+        "name": "Prisão de Pesadelos (ação)",
+        "description": "marque 1 Ponto de Fadiga para prender um alvo distante em uma poderosa ilusão de seus piores medos. Enquanto estiver preso, o alvo fica Imobilizado e Vulnerável até que se liberte com sucesso em um teste de Instinto, que remove as duas condições."
+      },
+      {
+        "name": "Escorregadio (reação)",
+        "description": "se o feiticeiro sofrer dano causado por um ataque, ele pode se teleportar para um ponto em alcance distante."
+      },
+      {
+        "name": "Grilhões da Culpa (reação)",
+        "description": "Contagem (Ciclo 2d6). Quando o feiticeiro for posto em foco pela primeira vez, ative a contagem regressiva. Quando a contagem terminar, todos os alvos Distantes ficam Vulneráveis e devem marcar 1 Ponto de Fadiga por terem revivido seus maiores arrependimentos. Um alvo pode se libertar da culpa com sucesso em um teste de Presença ou Força. Falhar nesse teste causa perda de 1 Ponto de Esperança."
+      }
+    ]
+  },
+  {
+    "name": "CAÍDO, DEFENSOR",
+    "type": "Lacaio",
+    "tier": 4,
+    "description": "Uma alma maldita, presa pela vontade dos Deuses Caídos.",
+    "motivationsAndTactics": "conquistar descanso, dominar, esmagar, punir",
+    "difficulty": 18,
+    "threshold": "nenhum",
+    "hp": 1,
+    "stress": 1,
+    "attack": {
+      "value": 2,
+      "type": "Machado maldito: muito próximo | 12 fís"
+    },
+    "abilities": [
+      {
+        "name": "Aura de Ruína (passiva)",
+        "description": "um personagem que marque PV por um ataque feito pelo defensor perde 1 Ponto de Esperança."
+      },
+      {
+        "name": "Lacaio (12) (passiva)",
+        "description": "o defensor é derrotado quando sofre qualquer dano. Para cada 12 pontos de dano causados por um personagem ao defensor, um lacaio adicional no alcance, e que seria atingido pelo ataque, é derrotado."
+      },
+      {
+        "name": "Ataque em Grupo (ação)",
+        "description": "gaste 1 Ponto de Medo para escolher um alvo e pôr em foco todos os defensores próximos dele. Esses lacaios ficam em alcance corpo a corpo do alvo e fazem um teste de ataque compartilhado. Se acertarem, cada um causa 12 pontos de dano físico. Os danos são somados."
+      }
+    ]
+  },
+  {
+    "name": "CAÍDO, GENERAL ARRASA-REINOS",
+    "type": "Solo",
+    "tier": 4,
+    "description": "Um Deus Caído, envolto em ira e ressentimento, trazendo milênios de experiência em destruir o espírito de heróis.",
+    "motivationsAndTactics": "corromper, dominar, punir, quebrar os fracos",
+    "difficulty": 20,
+    "threshold": "36/66",
+    "hp": 8,
+    "stress": 5,
+    "attack": {
+      "value": 7,
+      "type": "Chicote de farpas: próximo | 4d8+7 fís"
+    },
+    "abilities": [
+      {
+        "name": "Armadura de Brasas (passiva)",
+        "description": "quando o arrasa-reinos sofre dano, reduza o valor em 2d10 pontos."
+      },
+      {
+        "name": "Inclemente (2) (passiva)",
+        "description": "o arrasa-reinos pode ser posto em foco até 2 vezes por turno do mestre. Gaste Pontos de Medo normalmente para colocá-lo em foco."
+      },
+      {
+        "name": "Chicote Atormentador (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer um ataque padrão contra todos os alvos muito próximos. Se um alvo usar PA para reduzir o dano deste ataque, ele perde 2 Pontos de Armadura."
+      },
+      {
+        "name": "Arauto da Ruína (reação)",
+        "description": "quando um alvo marcar Pontos de Vida por causa de um ataque do arrasa-reinos, todos os personagens Distantes deste alvo perdem 1 Ponto de Esperança."
+      },
+      {
+        "name": "Cólera Desmedida (reação)",
+        "description": "Contagem (Decrescente 8). Quando o arrasa-reinos for posto em foco pela primeira vez, ative a contagem. Quando ela terminar, ele cria uma torrente de fúria incarnada que remove a carne dos ossos. Todos os alvos Distantes devem fazer um teste de reação de Presença. Quem falhar sofre 2d6+10 pontos de dano mágico direto. Quem passar sofre metade do dano. Para cada Ponto de Vida marcado por esse dano, invoque um defensor caído em um ponto em alcance muito próximo do alvo que tenha marcado Pontos de Vida. Se a contagem regressiva tiver seu valor máximo reduzido para 0, o arrasa-reinos marca seus PV restantes e todos os alvos Distantes devem marcar todos os seus PV e fazer um movimento de morte."
+      },
+      {
+        "name": "Desconheço a Derrota (mudança de forma) (reação)",
+        "description": "quando o arrasa-reinos marcar seu último Ponto de Vida, substitua-o pelo campeão invicto e o ponha em foco imediatamente."
+      }
+    ]
+  },
+  {
+    "name": "CAÍDO, GENERAL CAMPEÃO INVICTO",
+    "type": "Solo",
+    "tier": 4,
+    "description": "Aquele que apenas os mais temíveis têm chance de temer.",
+    "motivationsAndTactics": "assegurar vitória a qualquer custo, distribuir morte impiedosa, punir os desafiantes",
+    "difficulty": 18,
+    "threshold": "35/58",
+    "hp": 11,
+    "stress": 5,
+    "attack": {
+      "value": 8,
+      "type": "Espada quebra-corações: muito próximo | 4d12+13 fís"
+    },
+    "abilities": [
+      {
+        "name": "Armadura Inconstante (passiva)",
+        "description": "quando o campeão invicto sofre dano, reduza o valor em 1d10 pontos."
+      },
+      {
+        "name": "Inclemente (3) (passiva)",
+        "description": "o campeão invicto pode ser posto em foco até 3 vezes por turno do mestre. Gaste Pontos de Medo normalmente para colocá-lo em foco."
+      },
+      {
+        "name": "Golpe Destruidor (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer um ataque padrão contra todos os alvos muito próximos. Personagens atingidos perdem uma quantidade de Pontos de Esperança igual ao número de PV marcados pelo ataque."
+      },
+      {
+        "name": "Infindáveis Legiões (ação)",
+        "description": "gaste 1 Ponto de Medo para invocar um número de defensores caídos igual ao dobro do número de personagens, que surgem em pontos em alcance distante."
+      },
+      {
+        "name": "Arauto da Ruína (reação)",
+        "description": "quando um alvo marcar Pontos de Vida por causa de um ataque do arrasa-reinos, todos os personagens Distantes deste alvo perdem 1 Ponto de Esperança."
+      },
+      {
+        "name": "Círculo de Profanação (reação)",
+        "description": "Contagem (1d8). Quando o campeão invicto for posto em foco pela primeira vez, ative a contagem regressiva. Ao final da contagem, ative um círculo mágico que cobre uma área distante do campeão. Um alvo dentro da área fica Vulnerável até que saia do círculo. A área pode ser removida causando dano grave ao campeão invicto."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando o campeão invicto atingir um ataque contra um personagem, receba 1 Ponto de Medo."
+      }
+    ]
+  },
+  {
+    "name": "DRAGÃO VULCÂNICO, FLAGELO DE MAGMA",
+    "type": "Solo",
+    "tier": 4,
+    "description": "Enfurecido pelas feridas, o dragão explode em lava derretida.",
+    "motivationsAndTactics": "encharcar com lava, incinerar, repelir invasores, reposicionar-se",
+    "difficulty": 20,
+    "threshold": "30/58",
+    "hp": 7,
+    "stress": 5,
+    "attack": {
+      "value": 9,
+      "type": "Garras cobertas de lava: próximo | 4d12+4 fís"
+    },
+    "abilities": [
+      {
+        "name": "Inclemente (3) (passiva)",
+        "description": "o dragão pode ser posto em foco até 3 vezes por turno do mestre. Gaste Pontos de Medo normalmente para colocá-lo em foco."
+      },
+      {
+        "name": "Escamas Rachadas (passiva)",
+        "description": "quando o dragão sofre dano, role um número de d6 igual ao número de Pontos de Vida marcados. Receba 1 Ponto de Medo para cada resultado 4 ou maior."
+      },
+      {
+        "name": "Erupção (ação)",
+        "description": "gaste 1 Ponto de Medo para fazer as escamas do dragão explodirem lava, cobrindo a área muito próxima. Todos os alvos na área devem passar em um teste de reação de Agilidade ou sofrem 4d6+6 pontos de dano físico e são empurrados para um ponto em alcance próximo. A área afetada permanece coberta de lava. Uma criatura, além dragão, que adentre a área ou faça uma ação dentro dela, deve marcar 6 PV."
+      },
+      {
+        "name": "Poder Pulverizante (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer um ataque contra um alvo muito próximo. Em caso de sucesso, o alvo sofre 4d8+1 pontos de dano físico, perde 1 Ponto de Esperança e é empurrado para um ponto em alcance próximo. O dragão recupera 1 Ponto de Fadiga."
+      },
+      {
+        "name": "Esguicho de Lava (reação)",
+        "description": "quando o dragão sofre dano grave de um ataque muito próximo, sangue fervilhante esguicha da ferida, causando 2d10+4 pontos de dano físico direto ao atacante."
+      },
+      {
+        "name": "Sopro Vulcânico (reação)",
+        "description": "quando o dragão sofre dano maior, role 1d10. Se rolar 8 ou mais, o dragão sopra um jato de lava distante à sua frente. Todos os alvos na área devem fazer um teste de reação de Agilidade. Quem falhar sofre 2d10+4 pontos de dano físico, marca 1d4 Pontos de Fadiga e fica Vulnerável até que recupere 1 PF. Quem passar sofre metade do dano e deve marcar 1 Ponto de Fadiga."
+      },
+      {
+        "name": "Vingança Cinzenta (mudança de forma) (reação)",
+        "description": "quando o flagelo de magma marcar seu último PV, substitua-o pelo tirano das cinzas e imediatamente o ponha em foco."
+      }
+    ]
+  },
+  {
+    "name": "DRAGÃO VULCÂNICO, PREDADOR DE OBSIDIANA",
+    "type": "Solo",
+    "tier": 4,
+    "description": "Uma imensa criatura alada com escamas de obsidiana e garras impossivelmente afiadas.",
+    "motivationsAndTactics": "arremeter, caçar, defender covil, intimidar, voar",
+    "difficulty": 19,
+    "threshold": "33/65",
+    "hp": 6,
+    "stress": 5,
+    "attack": {
+      "value": 8,
+      "type": "Garras de obsidiana: próximo | 4d10+4 fis"
+    },
+    "abilities": [
+      {
+        "name": "Escamas de Obsidiana (passiva)",
+        "description": "o dragão é resistente a dano físico."
+      },
+      {
+        "name": "Inclemente (2) (passiva)",
+        "description": "o dragão pode ser posto em foco até 2 vezes por turno do mestre. Gaste Pontos de Medo normalmente para colocá-lo em foco."
+      },
+      {
+        "name": "Voador (passiva)",
+        "description": "enquanto estiver em voo, a Dificuldade do dragão aumenta em +3."
+      },
+      {
+        "name": "Bomba Rasante (ação)",
+        "description": "se o dragão estiver em voo, marque 1 Ponto de Fadiga para escolher um ponto em alcance distante. Mova-o até o ponto escolhido e faça um ataque contra todos os alvos muito próximos. Alvos atingidos pelo dragão sofrem 2d10+6 pontos de dano físico, devem marcar 1 Ponto de Fadiga e perdem 1 Ponto de Esperança."
+      },
+      {
+        "name": "Cauda-avalanche (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer um ataque contra todos os alvos próximos. Alvos atingidos pelo dragão sofrem 4d6+4 pontos de dano físico, são empurrados para um ponto em alcance distante e ficam Vulneráveis até suas próxima rolagem com Esperança."
+      },
+      {
+        "name": "Erupção de Fúria (mudança de forma) (reação)",
+        "description": "quando o predador de obsidiana marcar seu último Ponto de Vida, substitua-o pelo flagelo de magma e o ponha em foco imediatamente."
+      }
+    ]
+  },
+  {
+    "name": "DRAGÃO VULCÂNICO, TIRANO DAS CINZAS",
+    "type": "Solo",
+    "tier": 4,
+    "description": "Nenhum inimigo jamais teve a insolência de feri-lo tanto. Quando a lava assenta, vira cinza, assim como antigos inimigos da criatura.",
+    "motivationsAndTactics": "intimidar, matar ou ser morto, sufocar, voar",
+    "difficulty": 18,
+    "threshold": "29/55",
+    "hp": 8,
+    "stress": 5,
+    "attack": {
+      "value": 10,
+      "type": "Garras e dentes: próximo | 4d12+15 fís"
+    },
+    "abilities": [
+      {
+        "name": "Acuado (passiva)",
+        "description": "marque 1 Ponto de Fadiga em vez de gastar 1 Ponto de Medo para pôr o dragão em foco."
+      },
+      {
+        "name": "Asas Feridas (passiva)",
+        "description": "enquanto estiver em voo, a Dificuldade do dragão aumenta em +1."
+      },
+      {
+        "name": "Inclemente (4) (passiva)",
+        "description": "o dragão pode ser posto em foco até 4 vezes por turno do mestre. Gaste Pontos de Medo normalmente para colocá-lo em foco."
+      },
+      {
+        "name": "Reduzir a Cinzas (passiva)",
+        "description": "quando um personagem próximo do dragão falhar em um teste, ele perde 1 Ponto de Esperança e você recebe 1 Ponto de Medo. Se um personagem não puder perder 1 Ponto de Esperança, ele deve marcar 1 PV."
+      },
+      {
+        "name": "Hecatombe (ação)",
+        "description": "Contagem (1d12). Gaste 1 Ponto de Medo para ativar a contagem, que diminui toda vez que um personagem rolar com Medo. Quando a contagem termina, o dragão se debate, causando dano ambiental (como um terremoto, avalanche ou colapso das paredes). Todos os alvos Distantes devem fazer um teste de reação de Força. Quem falhar sofre 2d10+10 pontos de dano físico e fica Imobilizado pelos escombros até se libertar com sucesso em um teste de Força. Quem passar sofre metade do dano. Se o dragão for derrotado enquanto a contagem ainda está ativa, prossiga com os efeitos do fim da contagem imediatamente, como consequência da destruição causada pela sua morte."
+      },
+      {
+        "name": "Nuvem Cinzenta (ação)",
+        "description": "gaste 1 Ponto de Medo para esmagar o chão e jogar cinzas para o ar em alcance distante. Um alvo dentro da nuvem de cinzas sofre desvantagem em testes. A nuvem se dispersa na próxima vez que um adversário for posto em foco."
+      },
+      {
+        "name": "Violência Desesperada (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer um ataque contra todos os alvos próximos. Alvos atingidos pelo dragão sofrem 2d20+2 pontos de dano físico, são empurrados para pontos em alcance próximo de onde estavam e devem marcar 1 Ponto de Fadiga."
+      }
+    ]
+  },
+  {
+    "name": "EXALTADO, ARQUEIRO",
+    "type": "Atirador",
+    "tier": 4,
+    "description": "Soldados espirituais armados com um arco santo.",
+    "motivationsAndTactics": "atirar, focar flecha, obedecer, reposicionar-se",
+    "difficulty": 19,
+    "threshold": "25/45",
+    "hp": 3,
+    "stress": 2,
+    "attack": {
+      "value": 4,
+      "type": "Arco longo santo: distante | 4d8+8 fís"
+    },
+    "abilities": [
+      {
+        "name": "Punição dos Culpados (passiva)",
+        "description": "o arqueiro causa dano dobrado a alvos marcados como Culpados por um serafim supremo."
+      },
+      {
+        "name": "Saraivada Divina (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer um ataque padrão contra até três alvos."
+      }
+    ]
+  },
+  {
+    "name": "EXALTADO, SOLDADO",
+    "type": "Lacaio",
+    "tier": 4,
+    "description": "Almas de fiéis abençoados com armamento divino.",
+    "motivationsAndTactics": "aglomerar, obedecer, manobrar melhor, punir",
+    "difficulty": 18,
+    "threshold": "nenhum",
+    "hp": 1,
+    "stress": 2,
+    "attack": {
+      "value": 2,
+      "type": "Espada e escudo: corpo a corpo | 10 fís"
+    },
+    "abilities": [
+      {
+        "name": "Lacaio (13) (passiva)",
+        "description": "o soldado é derrotado quando sofre qualquer dano. Para cada 13 pontos de dano causados por um personagem ao soldado, um lacaio adicional no alcance, e que seria atingido pelo ataque, é derrotado."
+      },
+      {
+        "name": "Voo Divino (passiva)",
+        "description": "enquanto o soldado estiver em voo, gaste 1 Ponto de Medo para movê-lo paraum ponto em alcance distante, em vez de próximo, antes de realizar uma ação."
+      },
+      {
+        "name": "Ataque em Grupo (ação)",
+        "description": "gaste 1 Ponto de Medo para escolher um alvo e pôr em foco todos os soldados exaltados próximos dele. Esses lacaios ficam em alcance corpo a corpo do alvo e fazem um teste de ataque compartilhado. Se acertarem, cada um causa 10 pontos de dano físico. Os danos são somados."
+      }
+    ]
+  },
+  {
+    "name": "KRAKEN",
+    "type": "Solo",
+    "tier": 4,
+    "description": "Uma besta marinha lendária, maior que o maior dos galeões, com tentáculos repletos de ventosas e uma bocarra terrível.",
+    "motivationsAndTactics": "afogar, agarrar, consumir, esmagar",
+    "difficulty": 20,
+    "threshold": "35/70",
+    "hp": 11,
+    "stress": 8,
+    "attack": {
+      "value": 7,
+      "type": "Tentáculos: próximo | 4d12+10 fís"
+    },
+    "abilities": [
+      {
+        "name": "Inclemente (3) (passiva)",
+        "description": "o kraken pode ser posto em foco até 3 vezes por turno do mestre. Gaste Pontos de Medo normalmente para colocá-lo em foco."
+      },
+      {
+        "name": "Múltiplos Tentáculos (passiva)",
+        "description": "enquanto o kraken tiver 7 Pontos de Vida marcados ou menos, ele pode fazer seu ataque padrão contra dois alvos dentro do alcance."
+      },
+      {
+        "name": "Agarrar e Afogar (ação)",
+        "description": "faça um teste de ataque contra um alvo próximo. Em caso de sucesso, marque 1 Ponto de Fadiga para agarrar a vítima com um tentáculo e puxá-la para dentro da água. O alvo fica Imobilizado e Vulnerável até que se liberte com sucesso em um teste de Força ou até que o kraken sofra dano maior ou superior. Enquanto estiver Imobilizado e Vulnerável por esta habilidade, o alvo deve marcar 1 PF quando fizer um teste."
+      },
+      {
+        "name": "Jato Fervente (ação)",
+        "description": "gaste 1 Ponto de Medo para que o kraken cuspa um jato de água fervente em todos os alvos Distantes que estiverem em linha. Todos os alvos precisam passar em um teste de reação de Agilidade ou sofrem 4d6+9 pontos de dano físico. Se um alvo marcar Pontos de Armadura para reduzir o dano, ele também deve marcar 1 Ponto de Fadiga."
+      },
+      {
+        "name": "Impulso (reação)",
+        "description": "quando o kraken acertar um ataque contra um personagem, receba 1 Ponto de Medo."
+      }
+    ]
+  },
+  {
+    "name": "ORÁCULO DA PERDIÇÃO",
+    "type": "Solo",
+    "tier": 4,
+    "description": "Uma imponente criatura imortal que é a encarnação do destino, fadada a ver apenas os piores futuros possíveis.",
+    "motivationsAndTactics": "condenar, descartar, desencorajar, mudar local",
+    "difficulty": 20,
+    "threshold": "38/68",
+    "hp": 11,
+    "stress": 10,
+    "attack": {
+      "value": 8,
+      "type": "Ataque psíquico: distante | 4d8+9 mág"
+    },
+    "abilities": [
+      {
+        "name": "Aterrorizante (passiva)",
+        "description": "quando o oráculo acerta um ataque, todos os personagens Distantes perdem 1 Ponto de Esperança. Receba 1 Ponto de Medo."
+      },
+      {
+        "name": "Fechar Paredes (passiva)",
+        "description": "quando uma criatura muito distante falhar em um teste, ela deve marcar 1 Ponto de Fadiga."
+      },
+      {
+        "name": "Invocar Atormentadores (ação)",
+        "description": "uma vez por dia, gaste 2 Pontos de Medo, para invocar 2d4 lacaios de 2º patamar ou menor, relacionados aos pesadelos de um dos personagens. Eles surgem em pontos em alcance próximo do personagem."
+      },
+      {
+        "name": "Prever Destino (ação)",
+        "description": "gaste 1 Ponto de Medo para conceder a um alvo distante uma visão de seus pesadelos pessoais. O alvo deve fazer um teste de reação de Conhecimento. Se falhar, o alvo perde todos os Pontos de Esperança e sofre 2d20+4 pontos de dano mágico direto. Se passar, sofre metade do dano e perde 1 Ponto de Esperança."
+      },
+      {
+        "name": "Conhecimento Agourento (reação)",
+        "description": "quando o oráculo avista uma criatura mortal, ele imediatamente descobre um dos pesadelos pessoais da criatura."
+      },
+      {
+        "name": "Destino Rancoroso (reação)",
+        "description": "quando o oráculo marcar Pontos de Vida por um ataque muito próximo, você pode marcar 1 Ponto de Fadiga para empurrar o atacante para um ponto em alcance distante e causar-lhe 2d10+4 pontos de dano físico."
+      }
+    ]
+  },
+  {
+    "name": "REINOS EXTERIORES, ABOMINAÇÃO",
+    "type": "Brutamonte",
+    "tier": 4,
+    "description": "Uma zombaria caótica à própria vida, em fluxo constante.",
+    "motivationsAndTactics": "debilitar, demolir, devorar",
+    "difficulty": 19,
+    "threshold": "35/71",
+    "hp": 7,
+    "stress": 5,
+    "attack": {
+      "value": 0,
+      "type": "Pseudópode gigante: muito próximo | 4d6+13 mág"
+    },
+    "abilities": [
+      {
+        "name": "Forma Caótica (passiva)",
+        "description": "quando a abominação ataca, role 2d4 e use o resultado como modificador de ataque."
+      },
+      {
+        "name": "Presença Desconcertante (passiva)",
+        "description": "um alvo que sofra dano causado pela abominação deve fazer um teste de reação de Instinto. Se falhar, sofre desvantagem no seu próximo teste e você sofre 1 Ponto de Medo."
+      },
+      {
+        "name": "Abalar Realidade (ação)",
+        "description": "gaste 1 Ponto de Medo para abalar as bordas da realidade em alcance distante da abominação. Todos os alvos na área devem passar em um teste de reação de Conhecimento, ou ficam Dissociados da realidade até o fim da cena. Quando um alvo Dissociado gasta Pontos de Esperança ou marca PA, PV ou PF, deve gastar ou marcar o dobro de pontos necessários."
+      },
+      {
+        "name": "Forma Irreal (reação)",
+        "description": "quando a abominação sofre dano, reduza-o em 1d20 pontos. Se ela marcar 1 Ponto de Vida ou menos ao ser atingida por 1 ataque, você recebe 1 Ponto de Medo."
+      }
+    ]
+  },
+  {
+    "name": "REINOS EXTERIORES, CORRUPTOR",
+    "type": "Assistente",
+    "tier": 4,
+    "description": "Uma massa amorfa feita de luz cromática.",
+    "motivationsAndTactics": "confundir, distrair, subjugar",
+    "difficulty": 19,
+    "threshold": "27/47",
+    "hp": 4,
+    "stress": 3,
+    "attack": {
+      "value": 7,
+      "type": "Pseudópode corroído: muito próximo | 4d8+5 mág"
+    },
+    "abilities": [
+      {
+        "name": "Estilhaçar o Âmago (passiva)",
+        "description": "um personagem que sofra dano do corruptor perde 1 Ponto de Esperança."
+      },
+      {
+        "name": "Vomitar Realidade (ação)",
+        "description": "marque 1 Ponto de Fadiga para vomitar porções parcialmente digeridas de outras realidades em todos os alvos próximos. Alvos precisam passar em um teste de reação de Conhecimento ou devem marcar 2 PF."
+      }
+    ]
+  },
+  {
+    "name": "REINOS EXTERIORES, SERVO",
+    "type": "Lacaio",
+    "tier": 4,
+    "description": "Vagamente um humanoide, desprovido de memórias e identidade.",
+    "motivationsAndTactics": "destruir, desorientar, enojar, intimidar",
+    "difficulty": 17,
+    "threshold": "nenhum",
+    "hp": 1,
+    "stress": 1,
+    "attack": {
+      "value": 3,
+      "type": "Garras e dentes: muito próximo | 11 fís"
+    },
+    "abilities": [
+      {
+        "name": "Lacaio (13) (passiva)",
+        "description": "o servo é derrotado quando sofre qualquer dano. Para cada 13 pontos de dano causados por um personagem ao servo, um lacaio adicional no alcance, e que seria atingido pelo ataque, é derrotado."
+      },
+      {
+        "name": "Ataque em Grupo (ação)",
+        "description": "gaste 1 Ponto de Medo para escolher um alvo e pôr em foco todos os servos dos Reinos Exteriores próximos dele. Esses lacaios ficam em alcance corpo a corpo do alvo e fazem um teste de ataque compartilhado. Se acertarem, cada um causa 11 pontos de dano físico. Os danos são somados."
+      }
+    ]
+  },
+  {
+    "name": "SERAFIM SUPREMO",
+    "type": "Líder",
+    "tier": 4,
+    "description": "Um campeão que lidera tropas sagradas e defende os ideais de um deus.",
+    "motivationsAndTactics": "castigar, forçar dogma, julgar, voar",
+    "difficulty": 20,
+    "threshold": "37/70",
+    "hp": 7,
+    "stress": 5,
+    "attack": {
+      "value": 8,
+      "type": "Espada sagrada: muito próximo | 4d10+10 fís"
+    },
+    "abilities": [
+      {
+        "name": "Inclemente (3) (passiva)",
+        "description": "o serafim pode ser posto em foco até 3 vezes por turno do mestre. Gaste Pontos de Medo normalmente para colocá-lo em foco."
+      },
+      {
+        "name": "Voo Divino (passiva)",
+        "description": "enquanto o serafim estiver em voo, gaste 1 Ponto de Medo para movê-lo até um ponto em alcance distante, em vez de próximo, antes dele fazer uma ação."
+      },
+      {
+        "name": "Julgamento (ação)",
+        "description": "gaste 1 Ponto de Medo para marcar um alvo como Culpado aos olhos da divindade do serafim até que este seja derrotado. Alvos Culpados não recebem Esperança ao rolar com Esperança. Quando o serafim acerta um ataque padrão contra um alvo Culpado, ele causa dano grave, em vez do dano padrão. O serafim só pode marcar um alvo por vez."
+      },
+      {
+        "name": "Raios Divinos (ação)",
+        "description": "marque 1 Ponto de Fadiga para emitir uma fração de divindade através de um raio abrasador de luz que atinge até vinte alvos Muito Distantes. Alvos devem fazer um teste de reação de Presença, com desvantagem se estiverem marcados como Culpados. Quem falhar sofre 4d6+12 pontos de dano mágico. Quem passar sofre metade deste dano."
+      },
+      {
+        "name": "Somos Um (ação)",
+        "description": "uma vez por cena, gaste 1 Ponto de Medo para pôr em foco todos os outros adversários Distantes. Ataques feitos por eles por conta desta ação causam metade do dano."
+      }
+    ]
+  },
+  {
+    "name": "ZUMBI APERFEIÇOADO",
+    "type": "Brutamonte",
+    "tier": 4,
+    "description": "Um zumbi imponente e musculoso, aperfeiçoado por magia.",
+    "motivationsAndTactics": "agredir, aterrorizar, caçar, consumir",
+    "difficulty": 20,
+    "threshold": "40/70",
+    "hp": 9,
+    "stress": 4,
+    "attack": {
+      "value": 4,
+      "type": "Machado grande: muito próximo | 4d12+15 fís"
+    },
+    "abilities": [
+      {
+        "name": "Aterrorizante (passiva)",
+        "description": "quando o zumbi acerta um ataque, todos os personagens Distantes perdem 1 Ponto de Esperança. Receba 1 Ponto de Medo."
+      },
+      {
+        "name": "Presença Aterradora (passiva)",
+        "description": "personagens não podem gastar Esperança para usar habilidades contra o zumbi."
+      },
+      {
+        "name": "Golpe Perfeito (ação)",
+        "description": "marque 1 Ponto de Fadiga para fazer um ataque padrão contra todos os alvos muito próximos. Alvos atingidos ficam Vulneráveis até o próximo descanso."
+      },
+      {
+        "name": "Oportunista (reação)",
+        "description": "quando outro adversário causar dano a um alvo muito próximo do zumbi, você pode gastar 1 Ponto de Medo para somar o dano do ataque padrão do zumbi ao dano."
+      }
+    ]
+  },
+  {
+    "name": "LEGIÃO DE ZUMBIS",
+    "type": "Horda",
+    "tier": 4,
+    "quantity": 3,
+    "description": "Um grupo de zumbis, poderosos a despeito da carne putrefata.",
+    "motivationsAndTactics": "cercar, consumir cérebros, rasgar carne",
+    "difficulty": 17,
+    "threshold": "25/45",
+    "hp": 8,
+    "stress": 5,
+    "attack": {
+      "value": 2,
+      "type": "Mãos Zumbificadas: próximo | 4d6+10 fís"
+    },
+    "abilities": [
+      {
+        "name": "Obstinada (passiva)",
+        "description": "a legião tem resistência a dano físico."
+      },
+      {
+        "name": "Horda (2d6+5) (passiva)",
+        "description": "quando a legião tiver marcado metade de seus Pontos de Vida ou mais, seu ataque padrão causa 2d6+5 pontos de dano físico, em vez do valor original."
+      },
+      {
+        "name": "Inclemente (2) (passiva)",
+        "description": "a legião pode ser posta em foco até 2 vezes por turno do mestre. Gaste Pontos de Medo normalmente para colocá-la em foco."
+      },
+      {
+        "name": "Exceder (reação)",
+        "description": "quando a legião marcar PV por causa de um ataque corpo a corpo, você pode marcar 1 Ponto de Fadiga para fazer um ataque padrão contra o atacante."
+      }
+    ]
+  }
+]
