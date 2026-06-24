@@ -1,12 +1,12 @@
 "strict mode"
 
 import { hello } from './utils';
-import { Monsters } from './services/monster.service';
+import { MonsterDB } from './services/monsterdb.service';
 
 const index = (() => {
   // VARIÁVEIS GLOBAIS
   const name = 'Escopo de módulo';
-  const monsters = new Monsters();
+  const monsterDB = new MonsterDB();
   
   // FUNÇÕES
   function test() {
@@ -26,9 +26,9 @@ const index = (() => {
   // INICIALIZAÇÃO
   async function init() {
     events();
-    await monsters.getAll();
+    await monsterDB.getAll();
 
-    console.log(monsters.getMonsters());
+    console.log(monsterDB.getMonsters());
   }
 
   return {

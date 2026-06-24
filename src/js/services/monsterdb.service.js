@@ -1,4 +1,4 @@
-export class Monsters {
+export class MonsterDB {
   #monsters = [];
 
   constructor() {}
