@@ -1,6 +1,6 @@
-@import '@phosphor-icons/web/regular';
-@import '@phosphor-icons/web/fill';
-@import './variables.scss';
+@use '@phosphor-icons/web/regular';
+@use '@phosphor-icons/web/fill';
+@use './variables.scss' as *;
 
 $bg: green;
 
